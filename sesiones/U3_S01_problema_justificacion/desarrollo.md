@@ -40,15 +40,15 @@ La matriz de la sesión 3 consigna datasets, protocolos, métricas y resultados 
 
 **Brecha preliminar:** la evidencia se distribuye entre clasificación de sentimientos en reseñas, integración del texto en predicción de preferencias y generación de explicaciones/resúmenes. Hace falta una síntesis crítica y trazable que compare cómo se conectan esas etapas, qué señales de opinión usan los modelos de lenguaje y qué evidencia demuestra mejoras en la recomendación, junto con los costos, limitaciones y riesgos de fidelidad.
 
-La brecha no afirma que no existan trabajos; la revisión incluye estudios directamente relacionados y uno de 2026 que evalúa sentimiento y ensambles en recomendación. La pregunta pendiente es cómo organizar y comparar esa evidencia con criterios metodológicos comunes, incluidos los artículos del borrador original que puedan verificarse. La conclusión se limita al corpus y estrategia documentados en la sesión 3.
+La brecha no afirma que no existan trabajos; la revisión incluye estudios directamente relacionados y uno de 2026 que evalúa sentimiento y ensambles en recomendación. La pregunta pendiente es cómo organizar y comparar esa evidencia con criterios metodológicos comunes.
 
 ## E5. Problema y pregunta de investigación
 
-**Problema:** la evidencia sobre análisis de sentimientos con modelos de lenguaje y su uso en recomendación está fragmentada por tarea, dominio y métrica. Esta fragmentación dificulta determinar qué métodos se han evaluado en reseñas de videojuegos y hasta qué punto los hallazgos obtenidos en otros dominios permiten orientar sistemas de recomendación de videojuegos.
+**Problema:** la evidencia sobre análisis de sentimientos con modelos de lenguaje y su uso en recomendación está fragmentada por tarea, dominio y métrica. Esta fragmentación dificulta determinar qué métodos se han evaluado en reseñas de videojuegos y hasta qué punto los hallazgos obtenidos en otros dominios permiten orientar sistemas de recomendación de reseñas.
 
-**Pregunta de investigación:** ¿Qué métodos basados en modelos de lenguaje se han aplicado al análisis de sentimientos de reseñas para sistemas de recomendación, qué evidencia existe sobre su integración o utilidad en recomendación —con énfasis en videojuegos— y qué datos, métricas, limitaciones y brechas reporta la literatura?
+**Pregunta de investigación:** ¿Qué métodos basados en modelos de lenguaje se han aplicado al análisis de sentimientos de reseñas para sistemas de recomendación, qué evidencia existe sobre su integración o utilidad en recomendación  y qué datos, métricas, limitaciones y brechas reporta la literatura?
 
-La pregunta es apropiada para una revisión, no para un experimento causal. Su población documental y criterios de búsqueda se delimitan en la sesión 3.
+
 
 ## E6. Justificación
 
