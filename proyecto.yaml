@@ -1,9 +1,8 @@
 proyecto:
-  titulo: "Título del proyecto de investigación"
+  titulo: "Análisis de Sentimientos con Modelos de Lenguaje para Sistemas de Recomendación: Una Revisión Sistemática de la Literatura"
 
 integrantes:
-  - nombre: "Estudiante 1"
-  - nombre: "Estudiante 2"
+  - nombre: "Yoseth Orlando Llave Huachaca"
 
 curso:
   nombre: "Investigación III"

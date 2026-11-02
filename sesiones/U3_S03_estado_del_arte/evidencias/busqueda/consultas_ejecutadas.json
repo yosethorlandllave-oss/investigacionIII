@@ -3,15 +3,89 @@
   "interfaz": "buscador web",
   "nota": "Registro de consultas ejecutadas por lotes. Se registran términos de búsqueda, no conteos de resultados; el buscador no devolvió una exportación bibliográfica completa.",
   "lotes": [
-    {"id":"N01","consultas":["sentiment analysis review based recommender systems survey 2023 2024 language models","Steam game reviews aspect sentiment analysis BERT 2023 2024 2025 recommendation","review based recommendation sentiment language model 2024 2025 PETER PEPLER"]},
-    {"id":"N02","consultas":["sentiment analysis game review e35945","Factual and Informative Review Generation AAAI 2023","Personalized Prompt Learning Explainable Recommendation 2023","Joint Deep Modeling Users Items reviews recommendation 2017"]},
-    {"id":"N03","consultas":["Purbolaksono Heliyon 2024 sentiment analysis game review","Sentiment Analysis With Ensemble Hybrid Deep Learning Model Tan 2022","Transfer Learning for Sentiment Classification 5232 Sensors","Hierarchical Indexing for Retrieval-Augmented Opinion Summarization"]},
-    {"id":"N04","consultas":["XRec Large Language Models for Explainable Recommendation ACL 2024","Hybrid Quality-Based Recommender Systems systematic review 2025","sentiment analysis in recommender systems 2024 survey"]},
-    {"id":"N05","consultas":["Sentiment Analysis With Ensemble Hybrid Deep Learning Model PDF","A survey on large language models for recommendation Wu 2024","Joint Deep Modeling of Users and Items site:dl.acm.org","Personalized Prompt Learning site:dl.acm.org"]},
-    {"id":"N06","consultas":["sentiment recommender systems systematic survey 2024","large language models sentiment reviews recommendation","Steam sentiment Heliyon 2024","A Survey on Aspect-Based Sentiment Analysis Tasks Methods Challenges"]},
-    {"id":"N07","consultas":["A Large-Scale Empirical Study of LLM Orchestration and Ensemble Strategies for Sentiment Analysis in Recommender Systems 2026","Sentiment Analysis of Game Reviews on STEAM using BERT BiLSTM CRF authors results"]},
-    {"id":"N08","consultas":["WSDM AAAI CORE rankings","ACM Transactions on Information Systems AIS quartile","IEEE Transactions on Knowledge and Data Engineering AIS quartile","World Wide Web AIS quartile 2024"]},
-    {"id":"N09","consultas":["DeepCoNN WSDM 2017 proceedings pages DOI","A Large-Scale Empirical Study LLM Orchestration Future Internet 2026 authors","Areshey Mathkour Sensors 2023 5232"]}
+    {
+      "id": "N01",
+      "consultas": [
+        "sentiment analysis review based recommender systems survey 2023 2024 language models",
+        "Steam game reviews aspect sentiment analysis BERT 2023 2024 2025 recommendation",
+        "review based recommendation sentiment language model 2024 2025 PETER PEPLER"
+      ]
+    },
+    {
+      "id": "N02",
+      "consultas": [
+        "sentiment analysis game review e35945",
+        "Factual and Informative Review Generation AAAI 2023",
+        "Personalized Prompt Learning Explainable Recommendation 2023",
+        "Joint Deep Modeling Users Items reviews recommendation 2017"
+      ]
+    },
+    {
+      "id": "N03",
+      "consultas": [
+        "Purbolaksono Heliyon 2024 sentiment analysis game review",
+        "Sentiment Analysis With Ensemble Hybrid Deep Learning Model Tan 2022",
+        "Transfer Learning for Sentiment Classification 5232 Sensors",
+        "Hierarchical Indexing for Retrieval-Augmented Opinion Summarization"
+      ]
+    },
+    {
+      "id": "N04",
+      "consultas": [
+        "XRec Large Language Models for Explainable Recommendation ACL 2024",
+        "Hybrid Quality-Based Recommender Systems systematic review 2025",
+        "sentiment analysis in recommender systems 2024 survey"
+      ]
+    },
+    {
+      "id": "N05",
+      "consultas": [
+        "Sentiment Analysis With Ensemble Hybrid Deep Learning Model PDF",
+        "A survey on large language models for recommendation Wu 2024",
+        "Joint Deep Modeling of Users and Items site:dl.acm.org",
+        "Personalized Prompt Learning site:dl.acm.org"
+      ]
+    },
+    {
+      "id": "N06",
+      "consultas": [
+        "sentiment recommender systems systematic survey 2024",
+        "large language models sentiment reviews recommendation",
+        "Steam sentiment Heliyon 2024",
+        "A Survey on Aspect-Based Sentiment Analysis Tasks Methods Challenges"
+      ]
+    },
+    {
+      "id": "N07",
+      "consultas": [
+        "A Large-Scale Empirical Study of LLM Orchestration and Ensemble Strategies for Sentiment Analysis in Recommender Systems 2026",
+        "Sentiment Analysis of Game Reviews on STEAM using BERT BiLSTM CRF authors results"
+      ]
+    },
+    {
+      "id": "N08",
+      "consultas": [
+        "WSDM AAAI CORE rankings",
+        "ACM Transactions on Information Systems AIS quartile",
+        "IEEE Transactions on Knowledge and Data Engineering AIS quartile",
+        "World Wide Web AIS quartile 2024"
+      ]
+    },
+    {
+      "id": "N09",
+      "consultas": [
+        "DeepCoNN WSDM 2017 proceedings pages DOI",
+        "A Large-Scale Empirical Study LLM Orchestration Future Internet 2026 authors",
+        "Areshey Mathkour Sensors 2023 5232"
+      ]
+    },
+    {
+      "id": "N10",
+      "consultas": [
+        "\"Lightweight hybrid adaptive weighted ensemble\" \"Steam review\" 2026",
+        "10.1007/s10791-026-10296-6 dataset F1 2026"
+      ]
+    }
   ],
   "fuentes_primarias_y_repositorios": [
     "ACL Anthology: R01, R09, R10",
@@ -20,8 +94,13 @@
     "AAAI Proceedings: R07",
     "Springer Nature: R11",
     "MDPI: R04, R12",
-    "Institutional repository abstract: R03"
+    "Institutional repository abstract: R03",
+    "Springer Nature: R13 (texto completo consultado; metadatos, método y resultados verificados)"
   ],
   "snowballing": "Rastreos dirigidos en bibliografías y trabajos relacionados de DeepCoNN, PEPLER, XRec y el artículo de Steam. No representa un grafo completo de todos los citantes.",
-  "pendientes": ["Exportación nativa de bases académicas", "Cribado independiente por segundo lector", "Verificación de venue CORE/Scimago para ICEEI y algunas revistas"]
+  "pendientes": [
+    "Exportación nativa de bases académicas",
+    "Cribado independiente por segundo lector",
+    "Verificación de venue CORE/Scimago para ICEEI y algunas revistas"
+  ]
 }

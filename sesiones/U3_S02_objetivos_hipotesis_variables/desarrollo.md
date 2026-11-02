@@ -12,15 +12,15 @@
 
 ## E1. Pregunta de investigación revisada
 
-**Brecha:** la evidencia sobre clasificación de sentimientos, integración de reseñas en predicción de preferencias y generación de explicaciones se evalúa mediante tareas distintas. Se requiere sintetizar cómo se articulan y qué resultados respaldan su uso en recomendación.
+**Brecha:** los estudios de clasificación, recomendación y explicación emplean tareas y métricas distintas, y la evidencia directamente enfocada en videojuegos es reducida frente a la literatura general. Se requiere sintetizar qué resultados son directos, cuáles son contextuales y qué límites afectan su transferencia.
 
-**Pregunta:** ¿Cómo se han aplicado y evaluado los modelos de lenguaje y el análisis de sentimientos en reseñas para apoyar sistemas de recomendación, qué datos y métricas se utilizan, y qué limitaciones y brechas reporta la literatura?
+**Pregunta:** ¿Qué métodos basados en modelos de lenguaje se han aplicado al análisis de sentimientos de reseñas para sistemas de recomendación, qué evidencia existe sobre su integración o utilidad en recomendación —con énfasis en videojuegos— y qué datos, métricas, limitaciones y brechas reporta la literatura?
 
 La pregunta delimita población documental, enfoques, contexto y resultados. Se responde mediante búsqueda y síntesis crítica, no mediante una intervención computacional propia.
 
 ## E2. Objetivo general
 
-Analizar sistemáticamente la literatura científica sobre el uso de análisis de sentimientos y modelos de lenguaje en reseñas para apoyar sistemas de recomendación, comparando aplicaciones, métodos, datos, métricas, resultados, limitaciones y brechas reportadas.
+Analizar sistemáticamente la literatura científica sobre modelos de lenguaje y análisis de sentimientos en reseñas para sistemas de recomendación, con énfasis en videojuegos, comparando métodos, dominios, datos, métricas, resultados, limitaciones y brechas reportadas.
 
 ## E3. Objetivos específicos
 
@@ -76,7 +76,7 @@ Pang et al. (2002) aporta clasificación de polaridad; Zheng et al. (2017) integ
 
 ## Correspondencia con la actividad
 
-- [x] Pregunta específica y revisable.
+- [x] Pregunta específica, revisable y delimitada al título con énfasis en videojuegos.
 - [x] Objetivo general y cuatro objetivos específicos.
 - [x] Decisión explícita sobre por qué no corresponden hipótesis experimentales.
 - [x] Categorías documentales, definiciones y operacionalización con indicadores, escala e instrumento.

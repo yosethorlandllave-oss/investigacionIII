@@ -31,6 +31,7 @@ No se aplicó una suma numérica arbitraria. Artículos con resumen indexado per
 | R10 | Findings of EMNLP | Artículo de proceedings ACL revisado por pares; no se transfiere un rango del evento principal sin fuente específica | Clasificación temática y experimentos pueden consultarse en el artículo. |
 | R11 | World Wide Web | AIS 2024 Q2 en Computer Science / Information Systems | [UEFISCDI](https://uefiscdi.gov.ro/resource-860007-clasament.ais.jcr.2024.pdf). |
 | R12 | Future Internet | Artículo de revista revisado por pares, publicado 20/02/2026; indicador de venue no asentado aquí | La novedad y datos actuales hacen especialmente necesaria una lectura crítica; el cuartil no se infiere. |
+| R13 | Discover Computing, Springer Nature | Artículo de investigación de acceso abierto, publicado 22/06/2026; categoría CORE/SJR del venue no asentada aquí | Pertinencia directa a reseñas de Steam. Se conserva con cautela por inconsistencias entre los protocolos descritos (80/20 y cinco pliegues), umbral estadístico p<0,07 y ausencia de evaluación downstream. |
 
 AIS, SJR, CiteScore y CORE son sistemas diferentes. Si el equipo quiere completar la tabla de rangos para cada venue debe registrar edición, categoría y fuente; no atribuir un mismo cuartil a todas las áreas de una revista.
 

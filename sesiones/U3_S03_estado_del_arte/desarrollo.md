@@ -12,17 +12,17 @@
 
 ## Alcance del producto
 
-Esta versión conserva el título original del Documento 1. Examina el análisis de sentimientos en reseñas con modelos de lenguaje y su relación con sistemas de recomendación. Distingue clasificación de polaridad, predicción de rating/ranking, recomendación explicable y resumen de opiniones. No se afirma que una mejora en clasificación produzca automáticamente mejores recomendaciones.
+Esta versión conserva el título original. El alcance es el análisis de sentimientos en reseñas con modelos de lenguaje para sistemas de recomendación, con énfasis de aplicación en videojuegos (Steam/Epic Games Store). El corpus combina evidencia directa de videojuegos con estudios generales sobre clasificación, recomendación y explicación; la matriz diferencia ambos niveles y no transfiere a videojuegos resultados obtenidos en otros dominios. Se distinguen clasificación de polaridad, predicción de rating/ranking, recomendación explicable y resumen de opiniones. Una mejora clasificatoria no se considera, por sí sola, una mejora recomendadora.
 
-Se seleccionaron 12 trabajos científicos, incluidos dos antecedentes seminales, dos surveys y diez publicaciones recientes (2022–2026; 83,3 % del corpus). Se aplicaron criterios explícitos de búsqueda, elegibilidad y extracción. El resultado constituye una revisión sistemática de literatura en desarrollo: faltan exportaciones de bases nativas y una segunda persona para reproducir el cribado, por lo que no se declara cierre exhaustivo tipo PRISMA.
+Se seleccionaron 13 trabajos científicos, incluidos dos antecedentes fundacionales, dos surveys y once publicaciones recientes (2022–2026; 84,6 % del corpus). Se aplicaron criterios explícitos de búsqueda, elegibilidad y extracción. El resultado constituye un avance de revisión sistemática: faltan exportaciones de bases nativas y una segunda persona para reproducir el cribado, por lo que no se declara cierre exhaustivo tipo PRISMA.
 
 ## E1. Estrategia y registro de búsqueda
 
 ### Pregunta de revisión
 
-¿Cómo se han aplicado y evaluado los modelos de lenguaje y el análisis de sentimientos en reseñas para apoyar sistemas de recomendación, qué datos y métricas se utilizan, y qué limitaciones y brechas reporta la literatura?
+¿Qué métodos basados en modelos de lenguaje se han aplicado al análisis de sentimientos de reseñas para sistemas de recomendación, qué evidencia existe sobre su integración o utilidad en recomendación —con énfasis en videojuegos— y qué datos, métricas, limitaciones y brechas reporta la literatura?
 
-Se empleó PICOC para cubrir reseñas, análisis sentimental/modelos de lenguaje, comparadores tradicionales e híbridos, métricas de sentimiento/recomendación/explicación y plataformas de productos o contenidos digitales. Se combinaron términos en inglés y español sobre sentiment analysis, opinion mining, online reviews, BERT/Transformer/LLM, recommender systems, recommendation, Steam, Amazon, Yelp, explainable recommendation y opinion summarization.
+Se empleó PICOC con dos estratos de búsqueda: (1) evidencia directa sobre reseñas de videojuegos/plataformas como Steam y Epic, y (2) evidencia contextual sobre modelos de lenguaje, análisis de sentimiento y recomendación en otros dominios. Se combinaron términos en inglés y español sobre sentiment analysis, aspect-based sentiment, game reviews, Steam, language models, BERT/Transformer/LLM, recommender systems, recommendation y explainable recommendation. Las búsquedas sobre Amazon, Yelp y películas se usaron para localizar antecedentes generales y se etiquetan como contextuales.
 
 La [estrategia de búsqueda](evidencias/busqueda/estrategia_registro.md) conserva PICOC, cadenas por bloques, ventana, etapas, snowballing y candidatos pendientes. Las [consultas ejecutadas](evidencias/busqueda/consultas_ejecutadas.json) registran búsquedas por frase, DOI, dominio y fuente primaria. Se documenta lo efectivamente consultado; no se inventan exportaciones ni recuentos de bases que no se obtuvieron.
 
@@ -32,11 +32,11 @@ Se incluyeron trabajos con metadatos verificables y suficiente información sobr
 
 La evaluación considera pertinencia, método/datos, validez de etiquetas, partición y métrica, limitaciones, disponibilidad declarada y venue. No se sumaron puntos de calidad sin justificación. La categoría del venue, índice y año deben quedar identificados; cuando no se verificó una categoría de ranking, se dice así y se utiliza un juicio reservado. Véase [criterios de calidad](evidencias/busqueda/criterios_calidad.md).
 
-El corpus final tiene **12 publicaciones: 10 de 2022–2026 (83,3 %) y dos seminales**. El denominador cuenta publicaciones únicas, no versiones espejo ni artículos encontrados en abstract. La tabla registra un candidato Steam 2026 pendiente y el estudio general de Tan et al. (2022) como adyacente, fuera del conteo principal.
+El corpus de síntesis tiene **13 publicaciones únicas: 11 de 2022–2026 (84,6 %) y dos antecedentes fundacionales**. Este porcentaje describe actualidad dentro del corpus seleccionado, no exhaustividad del campo. R05 y R13 son evidencia empírica directa sobre sentimiento en reseñas de Steam; ninguno mide si el uso de esas etiquetas mejora una recomendación personalizada. Los demás trabajos aportan bases generales o evidencia contextual sobre sentimiento, recomendación, explicación y síntesis. Los candidatos todavía no verificados se mantienen fuera del corpus.
 
 ## E3. Matriz de síntesis
 
-La [matriz de R01–R12](evidencias/matrices/matriz_sintesis.md) incluye propósito, modelo, dataset, tipo de etiqueta, tarea, métrica, resultados extraídos, limitaciones y fuente primaria. `NR` significa no reportado o no verificado en el pasaje consultado. No se descargaron o ejecutaron códigos/datasets de terceros; las disponibilidades se califican como declaraciones del artículo.
+La [matriz de R01–R13](evidencias/matrices/matriz_sintesis.md) incluye propósito, modelo, dataset, tipo de etiqueta, tarea, métrica, resultados extraídos, limitaciones y fuente primaria. `NR` significa no reportado o no verificado en el pasaje consultado. No se descargaron o ejecutaron códigos/datasets de terceros; las disponibilidades se califican como declaraciones del artículo.
 
 ### E4. Antecedentes seminales y surveys
 
@@ -53,8 +53,8 @@ La [taxonomía](evidencias/mapas/taxonomia.md) ordena la secuencia conceptual de
 
 | Categoría | Trabajos | Objeto principal |
 |---|---|---|
-| Clasificación sentimental de reseñas | R01, R03–R05, R12 | Predecir polaridad; en algunos estudios la etiqueta se deriva del rating. |
-| Texto de reseñas dentro del recomendador | R02, R06–R07, R10, R12 | Estimar rating/preferencia y combinar texto con señales de usuario e ítem. |
+| Clasificación sentimental de reseñas | R01, R03–R05, R12–R13 | Predecir polaridad; en algunos estudios la etiqueta se deriva del rating. |
+| Reseñas en recomendación y explicación | R02, R06–R07, R10–R12 | Integrar texto, estimar rating o generar explicación; R12 evalúa sentimiento en contexto recomendador, sin métricas de ranking. |
 | Explicaciones y resúmenes de opinión | R06–R10 | Comunicar motivos o sintetizar evidencia textual. |
 | Síntesis del campo | R08, R11 | Organizar tareas, arquitecturas y desafíos. |
 
@@ -64,13 +64,13 @@ Las categorías se pueden cruzar, pero sus salidas y métricas no son intercambi
 
 ### 1. Clasificación del sentimiento en reseñas
 
-R01 introduce una comparación supervisada clásica. R03 explora ensambles de RoBERTa y recurrentes sobre varios datasets; R04 compara SVM y BERT en reseñas Yelp etiquetadas mediante extremos del rating; R05 estudia reseñas de Steam con BERT y variantes recurrentes; R12 evalúa ensambles de LLM en sentimiento vinculado a compras. Estos trabajos muestran que hay más de una estrategia y que los resultados cambian con dominio, etiqueta, configuración y protocolo.
+R01 introduce una comparación supervisada clásica. R03 explora ensambles de RoBERTa y recurrentes en varios datasets; R04 compara SVM y BERT en reseñas Yelp etiquetadas mediante extremos del rating; R05 compara BERT y variantes recurrentes en reseñas de Steam; R13 prueba un ensamble de métodos léxicos y SBERT ajustado sobre 147 586 reseñas de Steam y reporta F1 de 94,0 %. R12 evalúa LLM para clasificar sentimiento derivado de ratings de compra. Las diferencias de dominio, etiqueta, configuración y protocolo impiden ordenar directamente las cifras.
 
-Las métricas F1 y accuracy de distintos conjuntos no ordenan modelos de manera válida. Si los ratings se convierten a polaridad, la etiqueta es un proxy de la valoración y puede ocultar ironía, opiniones mixtas o diferencias entre aspectos. El estudio de Steam da proximidad a juegos, pero no compara directamente SVM ni prueba que sus etiquetas eleven la utilidad de una recomendación. R12 añade costo, aunque evalúa modelos propietarios y los resultados se ligan al precio y versiones disponibles al momento del experimento.
+Las métricas F1 y accuracy de distintos conjuntos no ordenan modelos de manera válida. Si los ratings se convierten a polaridad, la etiqueta es un proxy de la valoración y puede ocultar ironía, opiniones mixtas o diferencias entre aspectos. R05 y R13 son directamente pertinentes al dominio de videojuegos, pero miden clasificación y no la utilidad de una recomendación personalizada. R13 reporta protocolos distintos en secciones diferentes (partición 80/20 y validación cruzada de cinco pliegues) y un umbral p<0,07; esto limita la interpretación de su comparación estadística. R12 añade costos de LLM para sentimiento basado en reseñas de productos, no una evaluación de ranking recomendador.
 
 ### 2. Incorporación de reseñas en recomendaciones
 
-DeepCoNN modela reseñas de usuario e ítem y predice ratings. PEPLER adapta modelos preentrenados con prompts para recomendación explicable, y PRAG recupera reseñas para producir justificaciones y estimar rating. XRec combina señales colaborativas y capacidad lingüística para explicar perfiles. R12 acerca sentimiento y recomendación mediante reseñas y etiquetas derivadas de estrellas.
+DeepCoNN modela reseñas de usuario e ítem y predice ratings. PEPLER adapta modelos preentrenados con prompts para recomendación explicable, y PRAG recupera reseñas para producir justificaciones y estimar rating. XRec combina señales colaborativas y capacidad lingüística para explicar perfiles. R12 estudia estrategias de clasificación sentimental sobre reseñas de compra, con ratings como etiquetas, pero no informa métricas de ranking de un recomendador.
 
 Los artículos orientados a rating informan RMSE/MSE; los de clasificación informan accuracy/F1. Una disminución del error de rating no indica necesariamente mejor clasificación sentimental, y al revés. Para sostener que el análisis de sentimientos contribuye al sistema, el estudio debe evaluar también el resultado recomendador con comparadores pertinentes y describir la señal textual utilizada.
 
@@ -86,9 +86,9 @@ Zhang et al. organiza elementos de sentimiento por aspecto, mientras Wu et al. c
 
 **Brecha del estado del arte:** los estudios se distribuyen entre (a) clasificar el sentimiento de reseñas, (b) incorporar texto para estimar ratings/recomendaciones y (c) explicar o resumir opiniones. La relación empírica entre esos eslabones aún requiere una síntesis comparativa y trazable que identifique cuándo la señal sentimental aporta al resultado downstream y cómo se ponderan calidad, fidelidad, dominio, costo y eficiencia.
 
-La brecha se acota con evidencia concreta: R01 y R03–R05 miden clasificación; R02 y R06–R07 evalúan recomendación y explicaciones; R09 resume opiniones; R10 usa señales colaborativas para explicar; R12 examina ensambles de sentimiento, métricas recomendadoras/costo y deriva etiqueta desde rating. R12 aproxima los objetivos, por lo que el vacío no es “ausencia de estudios”: falta organizar las diferencias de supervisión y tarea, identificar qué mejoras son comparables y precisar los límites que impiden generalizar. Es una inferencia limitada al corpus de 12 trabajos y a la estrategia documentada.
+La brecha se acota con evidencia concreta: R05 y R13 analizan sentimiento en reseñas de Steam, pero no miden recomendación downstream; R02 y R06–R07 estudian integración de reseñas o explicación en recomendadores generales; R09 resume opiniones; R10 usa señales colaborativas para explicar; R12 compara estrategias de sentimiento en reseñas de compra y reporta costos, sin evaluar ranking personalizado. El vacío no es ausencia de estudios: falta organizar las diferencias de supervisión, dominio y tarea, identificar qué resultados son comparables y precisar qué evidencia falta para demostrar utilidad en recomendación de videojuegos. La inferencia se limita al corpus y la búsqueda documentados.
 
-**Diferenciación del proyecto:** auditar y sintetizar la relación entre sentimiento y recomendación en una revisión sistemática, distinguiendo polaridad, predicción recomendadora, explicación y resumen. No se propone una arquitectura ni se presupone que Transformers o LLM superen a métodos clásicos.
+**Diferenciación del proyecto:** sintetizar la relación entre sentimiento y recomendación en una revisión sistemática, con énfasis en reseñas de videojuegos, distinguiendo evidencia directa de evidencia contextual y separando polaridad, predicción recomendadora, explicación y resumen. No se propone una arquitectura ni se presupone que Transformers o LLM superen a métodos clásicos.
 
 ## E8. Borrador de introducción y estado del arte
 
@@ -98,13 +98,13 @@ Las reseñas digitales reúnen valoraciones sobre productos y servicios en forma
 
 Estas actividades están relacionadas, pero responden a preguntas distintas. Un clasificador puede predecir polaridad con buen F1 y, aun así, no mejorar el orden de recomendaciones. Un sistema puede obtener menor RMSE sin identificar correctamente los aspectos que sustentan la opinión. Una explicación puede ser fluida y no estar apoyada por las reseñas. Por ello, la literatura debe compararse según la tarea, las etiquetas, el conjunto de datos y la métrica que realmente se evalúan.
 
-Esta revisión analiza estudios sobre análisis de sentimiento y modelos de lenguaje aplicados a reseñas en el contexto de recomendación. Organiza la evidencia en clasificación, integración recomendadora, explicabilidad y síntesis de opiniones. La revisión busca determinar qué aportes pueden transferirse, cómo se ha demostrado su utilidad y qué limitaciones impiden comparar o reproducir resultados.
+Esta revisión analiza estudios sobre modelos de lenguaje y análisis de sentimientos en reseñas para recomendación, con énfasis en videojuegos. Organiza la evidencia en clasificación, integración recomendadora, explicabilidad y síntesis de opiniones; separa trabajos directos sobre videojuegos de estudios generales usados como contexto. Busca establecer qué métodos y resultados se reportan, qué evidencia mide una recomendación downstream y qué límites impiden comparar o transferir los hallazgos.
 
 ### Modelos para clasificar sentimientos en reseñas
 
 La línea de clasificación va desde la comparación supervisada de Pang et al. hasta ensambles neuronales y Transformers. Los estudios contemporáneos abarcan Yelp, Steam y reseñas asociadas a ratings. Aunque sus puntuaciones de F1 o accuracy ilustran el desempeño en cada caso, difieren en idioma, balance, fuente de etiquetas, configuración y partición. En particular, la derivación de positivo/negativo a partir de ratings no equivale a la anotación directa de cada expresión. Los resultados sirven como evidencia de clasificación contextualizada; por sí solos no prueban impacto en recomendación.
 
-La reseña de videojuegos es especialmente pertinente al enfoque original del título. El estudio de Steam contrasta BERT con variantes recurrentes en juegos populares, pero no evalúa cómo las predicciones modificarían decisiones de recomendación. A su vez, estudios de datasets generales ofrecen conjuntos comparativos más amplios, aunque la transferencia a jerga, ironía y comunidades de videojuegos no debe suponerse.
+La evidencia directa de videojuegos identificada en el corpus es Fadhlurrahman et al. (2023), que compara BERT y variantes recurrentes en reseñas de Steam. El estudio evalúa clasificación sentimental; no mide cómo las predicciones cambian el ranking o la utilidad de una recomendación. Los trabajos en otros dominios ayudan a comprender métodos y métricas, pero la transferencia a jerga, ironía y comunidades de videojuegos requiere validación específica.
 
 ### Integración del texto en recomendadores
 
@@ -120,7 +120,7 @@ En recomendación explicable, PEPLER, PRAG y XRec buscan comunicar por qué una 
 
 Wu et al. organiza el uso de LLM para recomendación en paradigmas distintos y ayuda a situar estos estudios dentro de un área amplia. El survey de ABSA complementa esa taxonomía al enfocarse en elementos de opinión. La matriz de esta revisión muestra que los resultados provienen de tareas, supervisiones y objetivos heterogéneos; no corresponde comparar métricas agregadas sin armonizar datos y protocolo.
 
-La contribución esperada de la revisión es clarificar la cadena entre reseña, señal sentimental y recomendación. Su brecha consiste en la integración insuficientemente sintetizada de desempeño sentimental, resultado downstream, fidelidad de explicación y costo. El estudio de 2026 ya aborda parte de esa intersección; por ello, la agenda debe identificar qué componentes quedan separados y qué evidencia es todavía incomparable, en vez de afirmar que no hay investigaciones relacionadas.
+La contribución de la revisión es clarificar cómo se conectan reseña, señal sentimental y recomendación y delimitar el nivel de evidencia disponible para videojuegos. La brecha se formula como falta de síntesis comparativa entre desempeño sentimental, resultado downstream, fidelidad de explicación y costo, junto con evidencia directa aún acotada en el dominio de videojuegos. El estudio de 2026 aborda parte de esa intersección en reseñas de productos; se presenta como evidencia contextual, no como prueba sobre videojuegos.
 
 ## E9. Referencias del corpus
 
@@ -147,6 +147,8 @@ La contribución esperada de la revisión es clarificar la cadena entre reseña,
 **R11.** Wu, L., Zheng, Z., Qiu, Z., Wang, H., Gu, H., Shen, T., Qin, C., Zhu, C., Zhu, H., Liu, Q., Xiong, H., & Chen, E. (2024). A Survey on Large Language Models for Recommendation. *World Wide Web, 27*, Article 60. [DOI: 10.1007/s11280-024-01291-2](https://doi.org/10.1007/s11280-024-01291-2).
 
 **R12.** Roumeliotis, K. I., Margaris, D., Spiliotopoulos, D., & Vassilakis, C. (2026). A Large-Scale Empirical Study of LLM Orchestration and Ensemble Strategies for Sentiment Analysis in Recommender Systems. *Future Internet, 18*(2), 112. [DOI: 10.3390/fi18020112](https://doi.org/10.3390/fi18020112).
+
+**R13.** Etemad Golestani, N., & Moattar, M. H. (2026). Lightweight hybrid adaptive weighted ensemble integrating fine-tuned SBERT with lexical and statistical models for robust Steam review sentiment classification. *Discover Computing, 29*, Article 367. [DOI: 10.1007/s10791-026-10296-6](https://doi.org/10.1007/s10791-026-10296-6).
 
 ## Control de versiones y uso en el PPI
 
