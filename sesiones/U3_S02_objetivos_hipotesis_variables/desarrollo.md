@@ -12,15 +12,15 @@
 
 ## E1. Pregunta de investigación revisada
 
-**Brecha:** los estudios de clasificación, recomendación y explicación emplean tareas y métricas distintas, y la evidencia directamente enfocada en videojuegos es reducida frente a la literatura general. Se requiere sintetizar qué resultados son directos, cuáles son contextuales y qué límites afectan su transferencia.
+**Brecha:** los estudios de clasificación, recomendación y explicación emplean tareas y métricas distintas, y la evidencia directamente enfocada en reseñas  es reducida frente a la literatura general. Se requiere sintetizar qué resultados son directos, cuáles son contextuales y qué límites afectan su transferencia.
 
-**Pregunta:** ¿Qué métodos basados en modelos de lenguaje se han aplicado al análisis de sentimientos de reseñas para sistemas de recomendación, qué evidencia existe sobre su integración o utilidad en recomendación —con énfasis en videojuegos— y qué datos, métricas, limitaciones y brechas reporta la literatura?
+**Pregunta:** ¿Qué métodos basados en modelos de lenguaje se han aplicado al análisis de sentimientos de reseñas para sistemas de recomendación, qué evidencia existe sobre su integración o utilidad en recomendacion   y qué datos, métricas, limitaciones y brechas reporta la literatura?
 
 La pregunta delimita población documental, enfoques, contexto y resultados. Se responde mediante búsqueda y síntesis crítica, no mediante una intervención computacional propia.
 
 ## E2. Objetivo general
 
-Analizar sistemáticamente la literatura científica sobre modelos de lenguaje y análisis de sentimientos en reseñas para sistemas de recomendación, con énfasis en videojuegos, comparando métodos, dominios, datos, métricas, resultados, limitaciones y brechas reportadas.
+Analizar sistemáticamente la literatura científica sobre modelos de lenguaje y análisis de sentimientos en reseñas para sistemas de recomendación, comparando métodos, dominios, datos, métricas, resultados, limitaciones y brechas reportadas.
 
 ## E3. Objetivos específicos
 
@@ -37,7 +37,7 @@ La consigna solicita determinar si el enfoque y alcance requieren hipótesis. Es
 
 ## E5. Variables y categorías de análisis
 
-Las categorías siguientes son constructos de extracción documental, no variables independientes/dependientes del experimento. La unidad de análisis es el artículo o estudio elegible. Se registra “no reportado” si la publicación no permite codificar un campo.
+
 
 | Categoría analítica | Función en la revisión | Valores/códigos iniciales |
 |---|---|---|
