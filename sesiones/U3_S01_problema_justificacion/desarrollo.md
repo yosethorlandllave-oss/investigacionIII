@@ -44,7 +44,7 @@ La brecha no afirma que no existan trabajos; la revisión incluye estudios direc
 
 ## E5. Problema y pregunta de investigación
 
-**Problema:** la evidencia sobre análisis de sentimientos con modelos de lenguaje y su uso en recomendación está fragmentada por tarea, dominio y métrica. Esta fragmentación dificulta determinar qué métodos se han evaluado en reseñas de videojuegos y hasta qué punto los hallazgos obtenidos en otros dominios permiten orientar sistemas de recomendación de reseñas.
+**Problema:** la evidencia sobre análisis de sentimientos con modelos de lenguaje y su uso en recomendación está fragmentada por tarea, dominio y métrica. Esta fragmentación dificulta determinar qué métodos se han evaluado en reseñas  y hasta qué punto los hallazgos obtenidos en otros dominios permiten orientar sistemas de recomendación de reseñas.
 
 **Pregunta de investigación:** ¿Qué métodos basados en modelos de lenguaje se han aplicado al análisis de sentimientos de reseñas para sistemas de recomendación, qué evidencia existe sobre su integración o utilidad en recomendación  y qué datos, métricas, limitaciones y brechas reporta la literatura?
 
@@ -60,7 +60,7 @@ La brecha no afirma que no existan trabajos; la revisión incluye estudios direc
 
 ## E7. Referencias científicas utilizadas
 
-La lista completa y trazable de 13 trabajos se presenta en E9 de la sesión 3. Entre las fuentes centrales se encuentran Pang et al. (2002), Zheng et al. (2017), Fadhlurrahman et al. (2023), Li et al. (2023), Xie et al. (2023), Ma et al. (2024), Wu et al. (2024), Roumeliotis et al. (2026) y Etemad Golestani y Moattar (2026). Solo se incorporan a la matriz referencias con metadatos identificables y fuente de consulta registrada.
+La lista completa y trazable de 13 trabajos se presenta. Entre las fuentes centrales se encuentran Pang et al. (2002), Zheng et al. (2017), Fadhlurrahman et al. (2023), Li et al. (2023), Xie et al. (2023), Ma et al. (2024), Wu et al. (2024), Roumeliotis et al. (2026) y Etemad Golestani y Moattar (2026). Solo se incorporan a la matriz referencias con metadatos identificables y fuente de consulta registrada.
 
 ## Control de avance
 
