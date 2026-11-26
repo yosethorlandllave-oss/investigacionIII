@@ -1,3 +1,5 @@
+> Archivo histórico del enfoque anterior. Para el PPI vigente consulte desarrollo.md y los archivos con sufijo _ppi. No representa la búsqueda actual.
+
 # Estrategia y registro de búsqueda
 
 **Título revisado:** *Análisis de Sentimientos con Modelos de Lenguaje para Sistemas de Recomendación: Una Revisión Sistemática de la Literatura*. **Fecha de búsqueda y corte:** 1 de noviembre de 2026. **Propósito:** identificar métodos de análisis de sentimientos con modelos de lenguaje en reseñas para recomendación, con énfasis en videojuegos, y distinguir la evidencia directa de los antecedentes generales.

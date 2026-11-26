@@ -1,3 +1,5 @@
+> Archivo histórico del enfoque anterior. Para el PPI vigente consulte desarrollo.md y los archivos con sufijo _ppi. No representa la búsqueda actual.
+
 # Matriz de síntesis de la literatura
 
 **Corte:** 1 de noviembre de 2026. Corpus de 13 trabajos, once publicados entre 2022 y 2026 (84,6 %), y dos antecedentes fundacionales. Este porcentaje describe el corpus seleccionado, no demuestra cobertura exhaustiva. R05 y R13 son evidencia directa sobre reseñas de Steam; R01, R03–R04 y R06–R12 aportan antecedentes o evidencia contextual en otros dominios o tareas. No se generalizan sus resultados a videojuegos. Separamos clasificación de sentimiento, uso de reseñas para recomendación y generación de explicaciones. `NR` indica que el dato no aparece en las fuentes consultadas o no se verificó; no significa que no exista.

@@ -1,3 +1,5 @@
+> Archivo histórico del enfoque anterior. Para el PPI vigente consulte desarrollo.md y los archivos con sufijo _ppi. No representa la búsqueda actual.
+
 # Criterios de selección y evaluación de calidad
 
 **Fecha:** 1/11/2026. La clasificación de venue complementa la valoración del trabajo; no sustituye la revisión de método ni se proyecta retrospectivamente como garantía de calidad.

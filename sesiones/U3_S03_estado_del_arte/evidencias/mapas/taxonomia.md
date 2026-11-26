@@ -1,3 +1,5 @@
+> Archivo histórico del enfoque anterior. Para el PPI vigente consulte desarrollo.md y los archivos con sufijo _ppi. No representa la búsqueda actual.
+
 # Taxonomía del corpus
 
 El mapa agrupa las 13 publicaciones de la [matriz de síntesis](../matrices/matriz_sintesis.md) por función y nivel de pertinencia. R05 y R13 son evidencia directa de reseñas de videojuegos (Steam); los otros estudios se emplean como fundamentos o evidencia contextual general. Las categorías pueden solaparse y no expresan jerarquía de calidad.
