@@ -1,87 +1,68 @@
 # Desarrollo — U3 Sesión 2: Objetivos, hipótesis y variables
 
-> **Reformulación del PPI — 26 de noviembre de 2026.** El contenido que sigue corresponde al enfoque anterior de revisión bibliográfica. Se conserva para trazabilidad y no constituye una sesión aprobada o completa para el nuevo proyecto sobre opiniones ciudadanas y limpieza pública en Juliaca. El título, problema, objetivos y diseño deben reformularse después de aclarar los datos de entrada y elegir el título. Las fechas y registros de búsqueda anteriores conservan su carácter histórico.
+**Título:** Comparación de TF-IDF con SVM y BETO para clasificar sentimientos en comentarios ciudadanos sobre limpieza pública y recojo de residuos sólidos en Juliaca
 
+**Autor:** Yoseth Orlando Llave Huachaca.
 
-**Título del enfoque anterior (pendiente de reemplazo):** Análisis de Sentimientos con Modelos de Lenguaje para Sistemas de Recomendación: Una Revisión Sistemática de la Literatura
+**Curso:** Investigación III, Ingeniería de Sistemas, Universidad Peruana Unión.
 
-**Autor:** Yoseth Orlando Llave Huachaca
+**Actualización:** 26 de noviembre de 2026.
 
-**Curso:** Investigación III — Universidad Peruana Unión
+**Estado:** propuesta metodológica redactada; no representa experimentos, recolección o validaciones ejecutados. Las decisiones operativas propuestas requieren revisión del asesor.
 
-**Fecha:** 1 de noviembre de 2026
+## E1. Pregunta revisada
 
-**Estado declarado en el avance anterior:** objetivos y matriz de consistencia para el diseño documental de la revisión; no hay experimento propio.
-
-## E1. Pregunta de investigación revisada
-
-**Brecha:** los estudios de clasificación, recomendación y explicación emplean tareas y métricas distintas, y la evidencia directamente enfocada en reseñas  es reducida frente a la literatura general. Se requiere sintetizar qué resultados son directos, cuáles son contextuales y qué límites afectan su transferencia.
-
-**Pregunta:** ¿Qué métodos basados en modelos de lenguaje se han aplicado al análisis de sentimientos de reseñas para sistemas de recomendación, qué evidencia existe sobre su integración o utilidad en recomendacion   y qué datos, métricas, limitaciones y brechas reporta la literatura?
-
-La pregunta delimita población documental, enfoques, contexto y resultados. Se responde mediante búsqueda y síntesis crítica, no mediante una intervención computacional propia.
+¿Qué diferencias de macro-F1, precisión y recall presentan TF-IDF con SVM y BETO al clasificar sentimientos en comentarios ciudadanos sobre limpieza pública y recojo de residuos sólidos en Juliaca, utilizando los mismos datos etiquetados y particiones de evaluación?
 
 ## E2. Objetivo general
 
-Analizar sistemáticamente la literatura científica sobre modelos de lenguaje y análisis de sentimientos en reseñas para sistemas de recomendación, comparando métodos, dominios, datos, métricas, resultados, limitaciones y brechas reportadas.
+Comparar el desempeño de TF-IDF con SVM y BETO en la clasificación de sentimientos de comentarios ciudadanos sobre limpieza pública y recojo de residuos sólidos en Juliaca, mediante una evaluación reproducible con métricas y particiones comunes.
 
 ## E3. Objetivos específicos
 
-| Código | Objetivo | Resultado verificable |
+| Código | Objetivo específico | Evidencia esperada |
 |---|---|---|
-| OE1 | Diseñar y documentar la búsqueda, los criterios de selección y el registro de selección de estudios pertinentes. | Cadenas, fechas, criterios, registro de acceso y corpus identificable. |
-| OE2 | Clasificar los estudios según la función del análisis de sentimientos/modelo de lenguaje y su relación con recomendación, ranking, explicación o resumen. | Taxonomía temática con asignación razonada de publicaciones. |
-| OE3 | Comparar datasets, etiquetas, modelos, métricas, resultados y recursos de reproducibilidad, distinguiendo cada tarea evaluada. | Matriz de extracción y síntesis de métodos y evaluación. |
-| OE4 | Sintetizar limitaciones, condiciones de transferencia y brechas de investigación a partir de la evidencia seleccionada. | Estado del arte por categorías y brecha sustentada. |
+| OE1 | Construir un corpus temático anonimizado y etiquetado mediante un protocolo de selección y anotación. | Registro de selección, guía, acuerdo y versión del corpus. |
+| OE2 | Configurar y entrenar TF-IDF con SVM y ajustar BETO utilizando particiones compartidas sin fuga de información. | Configuración, manifiesto de particiones y modelos. |
+| OE3 | Comparar macro-F1 y métricas por clase con estimaciones de incertidumbre bajo un protocolo predefinido. | Predicciones, métricas, diferencia y contraste. |
+| OE4 | Analizar errores y limitaciones de transferencia y documentar la reproducibilidad del experimento. | Tipología de errores, ficha técnica e informe. |
 
-## E4. Necesidad de hipótesis
+## E4. Hipótesis
 
-La consigna solicita determinar si el enfoque y alcance requieren hipótesis. Este trabajo es una revisión bibliográfica, con síntesis descriptiva y crítica de publicaciones. No manipula variables ni contrasta experimentalmente el desempeño de modelos sobre un nuevo dataset. Por ello, **no corresponde formular hipótesis general, H0 ni hipótesis específicas**. Los hallazgos se organizan mediante preguntas guía y categorías de extracción; no se presentan relaciones causales.
+El antecedente P05 motiva una expectativa favorable a BETO, pero su dominio y etiquetas difieren. P12 muestra que BETO no supera siempre a alternativas especializadas. La hipótesis de investigación propone que BETO obtendrá mayor macro-F1 que SVM; es una expectativa que debe contrastarse, no un resultado.
 
-## E5. Variables y categorías de análisis
+Sea Δ = macro-F1(BETO) − macro-F1(SVM) en el mismo conjunto de prueba. Para el contraste principal se plantea H0: Δ = 0 frente a H1: Δ ≠ 0. Se usa contraste bilateral para detectar también una ventaja de SVM. Solo una diferencia positiva con evidencia estadística apoyará la expectativa de superioridad de BETO. Un resultado no significativo no prueba igualdad. No se formulan hipótesis separadas para cada objetivo instrumental.
 
+## E5. Variables
 
+La variable independiente será el enfoque de clasificación. La dependiente principal será macro-F1; precisión y recall por clase serán complementarios. Se controlarán corpus, etiquetas y particiones. La calidad de anotación y distribución de clases se documentarán para interpretar los resultados. El proyecto no considera satisfacción ciudadana ni eficiencia del servicio municipal como variables dependientes.
 
-| Categoría analítica | Función en la revisión | Valores/códigos iniciales |
-|---|---|---|
-| Función del análisis sentimental | Identificar qué se hace con la opinión | Clasificación; análisis por aspecto; señal de rating/preferencia; explicación; resumen; múltiple. |
-| Familia de modelo | Describir el método | Léxico; ML tradicional; CNN/RNN; Transformer; LLM generativo; híbrido/ensamble. |
-| Vínculo con recomendación | Distinguir nivel de integración | Clasificador aislado; atributo de usuario/ítem; predicción de rating; ranking; explicación; resumen; evaluación downstream. |
-| Datos y etiquetas | Entender evidencia y supervisión | Dominio/plataforma/idioma; tamaño; etiqueta manual, rating-proxy, débil o no supervisada; partición. |
-| Evaluación | Comparar solo resultados compatibles | Accuracy, precision/recall/F1; RMSE/MSE; ranking; evaluación humana; costo/latencia. |
-| Reproducibilidad y límites | Valorar trazabilidad | Código/datos/modelo declarados; split; recursos; limitaciones; sesgo o transferibilidad. |
+## E6. Operacionalización
 
-## E6. Matriz de operacionalización documental
-
-| Categoría | Definición conceptual | Definición operacional / indicador | Escala | Fuente/instrumento |
+| Variable | Definición conceptual y operacional | Dimensión / indicador | Escala | Instrumento |
 |---|---|---|---|---|
-| Función de sentimiento | Papel que cumple la inferencia u organización de opinión | Codificar función primaria y secundaria de cada estudio usando la taxonomía; registrar evidencia textual y localizador. | Nominal multietiqueta. | Artículo primario; ficha de extracción. |
-| Familia de modelo | Arquitectura o método aplicado al texto | Registrar método descrito por autores y si integra modelos; no inferir arquitectura por solo nombrar LLM. | Nominal, multietiqueta. | Sección método/modelo; matriz. |
-| Vínculo recomendador | Relación técnica entre texto de opinión y resultado recomendador | Clasificar si la polaridad se evalúa sola o afecta rating, ranking, explicación, resumen o decisión final. | Nominal ordenada por grado de integración: indirecto/directo; añadir subtipo nominal. | Método y evaluación; ficha de extracción. |
-| Datos y referencia | Evidencia textual y mecanismo usado para construir etiquetas | Extraer tamaño, idioma, dominio, plataforma, unidad, polaridades y fuente de ground truth; marcar NR cuando falte. | Numérica para recuentos; nominal para procedencia y tipo de etiqueta. | Dataset/sección experimental; matriz. |
-| Resultado/métrica | Medida de una tarea específica | Copiar métrica, partición y valor con clase/escala; asociarla a clasificación, recomendación o explicación. No fusionar métricas. | Según métrica publicada; variable numérica continua para cada indicador. | Tablas y resultados; ficha de extracción. |
-| Calidad/reportabilidad | Información para evaluar validez y reproducción | Codificar criterios A–F de la revisión cualitativamente; registrar código/datos, limitaciones y fuente verificable. | Ordinal por ítem: sí/parcial/no/no reportado; sin suma automática. | Texto completo, fuentes del venue, lista de calidad. |
+| Independiente: enfoque de clasificación | Procedimiento que transforma texto en una clase. Dos niveles: pipeline TF-IDF–LinearSVC y BETO ajustado. | Identificador y configuración del modelo. | Nominal | Ficha experimental. |
+| Dependiente principal: desempeño | Concordancia entre predicciones y etiquetas humanas adjudicadas. | Macro-F1: promedio no ponderado del F1 de positivo, negativo y neutral. | Numérica 0–1 | Predicciones y script de métricas. |
+| Dependientes secundarias | Desempeño diferenciado por categoría. | Precision, recall y F1 por clase; exactitud y matriz de confusión. | 0–1 y recuentos | Informe de evaluación. |
+| Control: datos | Mismos comentarios y etiquetas para ambos enfoques. | Hash de corpus, IDs y partición; tres clases fijas. | Nominal / recuentos | Manifiesto del corpus. |
+| Control: selección de configuración | Ajuste sin acceso a prueba. | Rejilla, criterio de validación y presupuesto documentados. | Registro | Ficha experimental. |
+| Calidad de anotación | Acuerdo independiente antes de adjudicar. | Kappa de Cohen, acuerdo porcentual y soporte por clase. | Kappa −1 a 1; proporciones | Fichas de dos anotadores. |
+| Descriptiva: recursos | Condiciones de ejecución, no parte del título ni de la hipótesis principal. | Hardware, versiones, duración y semillas. | Texto / segundos | Bitácora. |
 
-**Procedimiento:** un lector completa la ficha con localizador por campo; campos dudosos pasan a revisión manual. La disponibilidad declarada no equivale a replicación. Las métricas se conservan en unidades originales y se comparan cualitativamente por tarea.
+Un corpus es un conjunto organizado de textos. Un pipeline encadena preparación y clasificación; la fuga de información ocurre cuando el ajuste utiliza datos reservados para evaluar. En cada clase, TP son aciertos positivos, FP falsas asignaciones y FN casos de la clase que el modelo omitió. Precisión mide cuántas asignaciones fueron correctas; recall, qué proporción de casos de la clase fue recuperada. F1 combina ambas medidas.
+
+Para cada clase, precisión = TP/(TP+FP), recall = TP/(TP+FN) y F1 = 2TP/(2TP+FP+FN). Macro-F1 es el promedio de los tres F1. Se declarará zero_division=0 para cálculos indefinidos y se reportará soporte; una clase ausente en prueba obliga a revisar el diseño, no a celebrar un promedio incompleto.
 
 ## E7. Matriz de consistencia
 
-| Problema / pregunta | Objetivo general | OE | Hipótesis | Categoría / indicador | Fuente |
-|---|---|---|---|---|---|
-| Evidencia dispersa sobre modelos de lenguaje, sentimiento en reseñas y recomendación. ¿Cómo se aplican, evalúan y qué límites reportan? | Analizar sistemáticamente la literatura y comparar sus aplicaciones y evaluación. | OE1: diseñar y documentar búsqueda y selección. | No aplica; revisión documental. | Estrategia, criterios, fecha, registro de selección. | Consultas y metadatos. |
-| La función del análisis sentimental varía entre clasificación y uso downstream. | Mismo objetivo general. | OE2: organizar categorías temáticas. | No aplica. | Función, modelo y vínculo con recomendación. | Texto primario, sección método. |
-| Las métricas clasificatorias y recomendadoras no son equivalentes. | Mismo objetivo general. | OE3: comparar datos, evaluación y resultados. | No aplica. | Dataset, etiquetas, métrica, valor, split, localizador. | Tablas y sección experimental. |
-| Quedan límites y brechas por sintetizar en contexto. | Mismo objetivo general. | OE4: formular síntesis y brechas. | No aplica. | Calidad, limitación, transferencia, reproducibilidad. | Discusión/conclusiones y criterios de calidad. |
+| Problema | Objetivo | Hipótesis | Variable / indicador | Procedimiento y evidencia |
+|---|---|---|---|---|
+| Desempeño local no establecido en los antecedentes consultados. | Objetivo general: comparar SVM y BETO. | H0: Δ=0; H1: Δ≠0. Expectativa: Δ>0. | Enfoque; macro-F1. | Prueba común reservada y comparación pareada. |
+| No existe aún un corpus local documentado en este repositorio. | OE1: construir corpus. | No requiere hipótesis independiente. | Acuerdo, soporte, elegibilidad. | Selección, anotación doble y adjudicación. |
+| Comparaciones pueden confundir datos y arquitectura. | OE2: entrenar bajo protocolo común. | Se integra al contraste general. | Configuración y partición. | Ajuste solo en entrenamiento/validación. |
+| Diferencias puntuales pueden ser inestables. | OE3: evaluar e inferir. | Contraste principal general. | Δ y variabilidad. | Remuestreo agrupado y contraste descrito en S04. |
+| Promedios ocultan fallos del lenguaje local. | OE4: analizar errores. | Descriptivo, sin nuevas hipótesis confirmatorias. | Errores por clase y fenómeno. | Revisión ciega de casos anonimizados. |
 
-## E8. Referencias base para definir categorías
+## E8. Referencias y trazabilidad
 
-Pang et al. (2002) aporta clasificación de polaridad; Zheng et al. (2017) integra reseñas en recomendación; Zhang et al. (2023) organiza análisis por aspecto; Wu et al. (2024) organiza modelos de lenguaje en recomendación; Roumeliotis et al. (2026) mide sentimiento, agregación y costo en ese contexto. Los metadatos y enlaces completos están en E9 de la sesión 3 y en la matriz de síntesis. Esta operacionalización es una propuesta de la revisión, no una definición atribuida literalmente a esos artículos.
-
-## Correspondencia anterior con la actividad (pendiente de reevaluación para el PPI)
-
-- [x] Pregunta específica, revisable y delimitada al título con énfasis en videojuegos.
-- [x] Objetivo general y cuatro objetivos específicos.
-- [x] Decisión explícita sobre por qué no corresponden hipótesis experimentales.
-- [x] Categorías documentales, definiciones y operacionalización con indicadores, escala e instrumento.
-- [x] Matriz de consistencia.
-- [x] Fuentes científicas vinculadas con las categorías.
+P01–P03 fundamentan los enfoques; P04–P08 contextualizan la comparación y M01 orienta la inferencia. Véase [bibliografía](../../literatura/referencias_ppi.md). Copias para el PPI: [operacionalización](../../ppi/02_matriz_operacionalizacion.md) y [consistencia](../../ppi/03_matriz_consistencia.md).
