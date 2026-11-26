@@ -1,6 +1,6 @@
 # Registro de búsqueda y selección del PPI
 
-Fecha real de consulta: 26 de noviembre de 2026. Modalidad: búsqueda web dirigida y consulta de fuentes primarias; no se declara ejecución de consultas nativas en Scopus o Web of Science. Punto de partida: Word y texto LaTeX proporcionados por el estudiante. Los registros de noviembre 1 corresponden al enfoque histórico.
+Fecha real de consulta: 26 de noviembre de 2026. Modalidad: búsqueda web dirigida y consulta de fuentes primarias; no se declara ejecución de consultas nativas en Scopus o Web of Science. Punto de partida: Word y texto LaTeX proporcionados por el estudiante.
 
 ## Consultas ejecutadas
 
@@ -33,7 +33,6 @@ Incluir publicaciones identificables relacionadas con clasificación, español/r
 - Sustainability 13788: autoría Jenkins y colaboradores; corregir la atribución a Thiagarajah.
 - Weibo PMC11471487: la consulta inicial localizó el artículo; un segundo acceso fue bloqueado por comprobación de navegador. La identidad se corroboró después en PubMed: Sui y Zhang, Heliyon 2024, e38510. Se incorporó como P15 con extracción parcial; no usar cifras no comprobadas.
 - Díaz Tunjar y Cayra Uscamayta: conservar como candidatos del documento base; comprobar tesis y metodología antes de incorporarlos como evidencia cuantitativa.
-- No se transfieren los 29 estudios del artículo anterior ni los 13 del corpus histórico a esta matriz nueva.
 - Snowballing: se recuperaron fuentes originales a partir de referencias del material base. La búsqueda de citas posteriores y expansión desde bibliografías completas sigue pendiente.
 
 
@@ -48,4 +47,4 @@ Búsqueda web dirigida, seguida de lectura del original:
 - `site.scimagojr.com "Sensors" "2023" "Q1"`: comprobación complementaria de CiteScore en informe editorial; no confundir sistemas.
 - `site.scimagojr.com "Transactions of the Association for Computational Linguistics" "2023"`: ficha localizada, apertura bloqueada.
 
-Selección: P12 por comparación con BETO en redes; P13 por tres clases en español y desacuerdo; P14 por restricciones de datos; P15 por residuos. TweetNLP se localizó como herramienta, sin agregarlo al núcleo para evitar duplicar el aporte de P08. No se registran conteos totales de buscador ni un flujo de RSL. La ventana y las cadenas ampliadas anteriores siguen siendo un plan de búsqueda nativa, no consultas efectuadas en Scopus.
+Selección: P12 por comparación con BETO en redes; P13 por tres clases en español y desacuerdo; P14 por restricciones de datos; P15 por residuos. TweetNLP se localizó como herramienta, sin agregarlo al núcleo para evitar duplicar el aporte de P08. No se registran conteos totales de buscador ni un flujo de selección exhaustiva. La ventana y las cadenas ampliadas anteriores siguen siendo un plan de búsqueda nativa, no consultas efectuadas en Scopus.

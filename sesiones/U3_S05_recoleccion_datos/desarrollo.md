@@ -78,3 +78,24 @@ La recolección se realizará mediante observación documental de publicaciones 
 P04–P05 y P08–P09 aportan antecedentes de comentarios digitales; M01 orienta el reporte de evaluación. Véase [bibliografía](../../literatura/referencias_ppi.md). Esta sección se guarda también en `ppi/06_tecnicas_instrumentos.md`.
 
 **Estado de rúbrica:** E1, E2, E5, E6, E7 y E9 redactados como propuesta. E3 y E4 requieren ejecución real; E8 requiere comprobar condiciones y responsabilidades antes de acceso. No se declara puntaje ni aprobación docente.
+
+### Protocolo operativo por lote
+
+1. Yoseth registrará fuente, fecha, vía de acceso y orden de revisión. Verificará localidad, periodo y relación con el servicio antes de interpretar sentimiento.
+2. Asignará identificadores internos y enmascarará datos personales. Conservará las exclusiones con motivo; no guardará perfiles de usuarios.
+3. Entregará copias independientes a dos anotadores. Cada persona registrará etiqueta, motivo y versión de guía sin ver la respuesta de la otra.
+4. Calculará acuerdo antes del consenso, incluyendo no_clasificable. Luego documentará adjudicación y motivos; no utilizará predicciones como etiquetas humanas.
+5. Verificará claves, duplicados, faltantes y consistencia. Los datos incompletos quedarán en revisión y no ingresarán al corpus congelado.
+6. Cerrará el lote con conteos agregados, versión, incidencias y reglas aplicadas. Solo después se incorporará al manifiesto de particiones.
+
+### Decisiones del piloto
+
+La meta inicial es revisar hasta 100 comentarios de las publicaciones propuestas. Se registrarán tiempo efectivo, accesibilidad, distribución de etiquetas, porcentaje de exclusiones y acuerdo. Si kappa es menor que 0,70, se revisarán desacuerdos y ejemplos y se realizará una nueva ronda independiente; alcanzar esa meta no demuestra por sí solo validez. Si alguna clase es escasa, se ampliará cobertura por publicaciones, sin buscar o fabricar opiniones de una polaridad concreta. El paso al corpus definitivo requiere una guía estable y recursos suficientes, con revisión del asesor.
+
+El segundo anotador, los comentarios efectivamente disponibles y las fechas siguen sin confirmarse. No se consideran resultados los ejemplos inventados de la guía ni las plantillas vacías. La revisión de contenido del asesor y la aplicación del piloto se documentarán cuando ocurran.
+
+### Evidencias y revisión de entrega
+
+[Índice de evidencias](evidencias/README.md) · [Rúbrica de la sesión](../../rubricas/U3_S05_rubrica.md).
+
+La redacción se revisó para mantener correspondencia entre problema, objetivos, indicadores y procedimiento. La aprobación académica corresponde al docente; las actividades aún no ejecutadas permanecen identificadas.

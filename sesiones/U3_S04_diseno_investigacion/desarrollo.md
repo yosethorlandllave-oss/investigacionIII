@@ -91,3 +91,23 @@ Riesgos principales: falta de acceso (alternativa: suspender esa fuente y docume
 Se realizará una comparación cuantitativa de dos pipelines supervisados sobre un corpus de comentarios temáticos de Juliaca. Después de confirmar acceso y viabilidad, se aplicará anotación independiente y se conservará una referencia humana adjudicada. Las publicaciones y duplicados se mantendrán separados entre particiones para reducir fuga de información. Los modelos se ajustarán en entrenamiento y validación; una prueba reservada permitirá estimar desempeño y diferencias pareadas. El reporte distinguirá precisión predictiva, incertidumbre, errores y límites de cobertura. El diseño no permite atribuir cambios al servicio municipal.
 
 Referencias: P01–P03, P06–P08 y M01 en [bibliografía](../../literatura/referencias_ppi.md). Copia del procedimiento en `ppi/05_procedimiento_metodologico.md`. Pendientes: recursos, colaboradores, fecha inicial y aprobación del protocolo.
+
+### Reglas de ejecución y cierre de fases
+
+La recolección definitiva comenzará después de comprobar acceso y revisar el piloto. Antes de entrenar, se generará un manifiesto con grupos, clases y particiones. El archivo de prueba se reservará hasta elegir ambas configuraciones. El investigador no cambiará la muestra ni la definición de neutralidad para favorecer un resultado.
+
+| Incidencia | Decisión prevista | Registro |
+|---|---|---|
+| Falta de alguna clase o de grupos suficientes | Ampliar la recolección antes de congelar prueba; revisar viabilidad si persiste. | Enmienda al protocolo y conteos reales. |
+| GPU no disponible o memoria insuficiente | Posponer BETO o ajustar lote/longitud antes de la evaluación final. | Hardware efectivo, configuración y razón del cambio. |
+| Interrupción de Colab | Recuperar el último estado íntegro; identificar reinicio y duración efectiva. | Ejecución marcada como interrumpida hasta completarse. |
+| Acceso accidental a etiquetas de prueba durante ajuste | Declarar contaminación y definir una nueva prueba independiente, si es posible. | Incidencia y nueva versión del manifiesto. |
+| Diferencia no significativa | Informar incertidumbre y tamaño de efecto; no afirmar equivalencia. | Informe comparativo. |
+
+El criterio principal de selección será macro-F1 de validación. Para SVM, los empates se resolverán por unigramas, menor C y ausencia de ponderación, en ese orden; para BETO, por menor longitud, menos épocas y menor tasa de aprendizaje. Estas reglas propuestas evitan escoger retrospectivamente por prueba y deberán mantenerse al congelar el protocolo.
+
+### Evidencias y revisión de entrega
+
+[Índice de evidencias](evidencias/README.md) · [Rúbrica de la sesión](../../rubricas/U3_S04_rubrica.md).
+
+La redacción se revisó para mantener correspondencia entre problema, objetivos, indicadores y procedimiento. La aprobación académica corresponde al docente; las actividades aún no ejecutadas permanecen identificadas.

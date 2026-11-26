@@ -57,3 +57,15 @@ Los antecedentes consultados cubren clasificación en español, modelos contextu
 Referencias P03–P09 y C01: [bibliografía](../../literatura/referencias_ppi.md). La matriz de evidencia del problema se conserva en [evidencias](evidencias/delimitacion.md).
 
 **Pendiente de campo:** confirmar acceso y disponibilidad del corpus. El problema no incluye cifras de reclamos ni deterioro del servicio no comprobadas.
+
+### Delimitación del problema práctico y científico
+
+En el plano práctico, revisar comentarios uno por uno demanda tiempo y puede producir interpretaciones diferentes. Esta es la necesidad que motiva el proyecto; todavía no se dispone de una medición municipal del tiempo de revisión y no se le asigna un valor ficticio. En el plano científico, la incertidumbre consiste en establecer qué diferencias presentan los dos clasificadores bajo un mismo conjunto de etiquetas y condiciones de evaluación.
+
+La brecha se organiza en tres puntos: se conocen aplicaciones de clasificación en español y redes (P04, P05, P08 y P12); sus dominios y esquemas de evaluación limitan transferir los resultados; se necesita una comparación local controlada. El producto esperado es un corpus documentado de acceso restringido, dos modelos evaluados y un informe comparativo. Una aplicación municipal posterior dependerá de la calidad obtenida y de los permisos correspondientes.
+
+### Evidencias y revisión de entrega
+
+[Índice de evidencias](evidencias/README.md) · [Rúbrica de la sesión](../../rubricas/U3_S01_rubrica.md).
+
+La redacción se revisó para mantener correspondencia entre problema, objetivos, indicadores y procedimiento. La aprobación académica corresponde al docente; las actividades aún no ejecutadas permanecen identificadas.

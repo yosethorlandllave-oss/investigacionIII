@@ -1,28 +1,7 @@
-# Evidencias — U3 Sesión 4
+# Evidencias de la sesión 4
 
-Esta carpeta contiene los archivos complementarios del diseño de la
-investigación.
+[Desarrollo de la sesión](../desarrollo.md)
 
-## Evidencias sugeridas
+- [Diagrama](esquema_metodo.md)
 
-- diagrama del método o del protocolo experimental;
-- matriz de operacionalización en hoja de cálculo;
-- cálculo del tamaño de muestra o descripción del dataset;
-- cronograma (Gantt);
-- plan de análisis estadístico o notebook de prueba;
-- matriz de coherencia problema–objetivos–hipótesis–diseño;
-- registro de riesgos;
-- borradores de la sección Procedimiento metodológico.
-
-## Organización recomendada
-
-```text
-evidencias/
-├── diagramas/
-├── matrices/
-├── cronograma/
-└── borradores/
-```
-
-Cada archivo debe tener un nombre descriptivo y corresponder a una evidencia
-registrada en `desarrollo.md`.
+[Instrumentos](../../../instrumentos/diccionario_datos.md) · [Control de rúbricas](../../../feedback/2026-11-26_control_rubricas_redaccion.md).

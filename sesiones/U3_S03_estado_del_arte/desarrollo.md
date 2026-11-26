@@ -12,7 +12,7 @@
 
 ## E1. Estrategia de búsqueda
 
-Se realizó una búsqueda dirigida a partir de los documentos base, con consulta de fuentes originales y ampliación a fundamentos y evaluación. El [registro](evidencias/busqueda/registro_ppi.md) distingue búsquedas ejecutadas de consultas propuestas. Es un estado del arte del PPI; no se presenta como RSL ni como búsqueda exhaustiva.
+Se realizó una búsqueda dirigida a partir de los documentos base, con consulta de fuentes originales y ampliación a fundamentos y evaluación. El [registro](evidencias/busqueda/registro_ppi.md) distingue búsquedas ejecutadas de consultas propuestas. Es un estado del arte del PPI; su cobertura es dirigida y no exhaustiva.
 
 ## E2. Selección y calidad
 
@@ -69,4 +69,24 @@ Los trabajos difieren en idioma, plataforma, etiquetas y métrica. No es válido
 
 ## E9. Referencias y trazabilidad
 
-[Bibliografía P01–P15 y M01](../../literatura/referencias_ppi.md). Los archivos históricos se conservan para trazabilidad y no son el corpus vigente del PPI. Pendientes: extracción completa de varios artículos, verificación de rankings y ampliación de literatura reciente/local.
+[Bibliografía P01–P15 y M01](../../literatura/referencias_ppi.md). Pendientes: extracción completa de varios artículos, verificación de rankings y ampliación de literatura reciente/local.
+
+### Pregunta que orienta el estado del arte
+
+¿Qué evidencia sobre clasificación de sentimientos en español, adaptación al lenguaje de redes y calidad de etiquetado permite diseñar una comparación de SVM y BETO para comentarios de servicios públicos? La selección debe incluir resultados que cuestionen la ventaja esperada de BETO, además de los favorables.
+
+| Concepto | Palabras clave | Función |
+|---|---|---|
+| Tarea | sentiment classification, análisis de sentimientos, polarity | Delimitar la salida de clasificación. |
+| Modelo | TF-IDF, support vector machine, SVM, BETO, Spanish BERT | Identificar comparadores y fundamentos. |
+| Dominio | public services, waste collection, municipal, limpieza pública | Examinar transferibilidad al servicio. |
+| Idioma y plataforma | Spanish, español, Facebook, social media, Peru | Identificar condiciones cercanas. |
+| Calidad | annotation agreement, macro-F1, data leakage, domain adaptation | Sustentar controles metodológicos. |
+
+La evidencia se interpreta en cuatro niveles: comparación directa de modelos (P05), clasificación cercana por idioma/plataforma (P04, P08, P12), aplicaciones ambientales (P09, P15) y fundamentos metodológicos. La cercanía temática no equivale a identidad de población o tarea. El registro de búsqueda conserva lo realmente consultado; no se atribuyen consultas a bases no utilizadas.
+
+### Evidencias y revisión de entrega
+
+[Índice de evidencias](evidencias/README.md) · [Rúbrica de la sesión](../../rubricas/U3_S03_rubrica.md).
+
+La redacción se revisó para mantener correspondencia entre problema, objetivos, indicadores y procedimiento. La aprobación académica corresponde al docente; las actividades aún no ejecutadas permanecen identificadas.

@@ -66,3 +66,20 @@ Para cada clase, precisión = TP/(TP+FP), recall = TP/(TP+FN) y F1 = 2TP/(2TP+FP
 ## E8. Referencias y trazabilidad
 
 P01–P03 fundamentan los enfoques; P04–P08 contextualizan la comparación y M01 orienta la inferencia. Véase [bibliografía](../../literatura/referencias_ppi.md). Copias para el PPI: [operacionalización](../../ppi/02_matriz_operacionalizacion.md) y [consistencia](../../ppi/03_matriz_consistencia.md).
+
+### Criterios para verificar los objetivos
+
+| Objetivo | Criterio de cierre | Evidencia que debe existir |
+|---|---|---|
+| OE1 | Cada caso incluido tiene origen, pertinencia, dos etiquetas y decisión final; no quedan identificadores personales en la entrada. | Corpus restringido, guía versionada y reporte agregado de acuerdo. |
+| OE2 | Ambos modelos usan el mismo manifiesto; el vocabulario y ajuste no utilizan prueba. | Configuración, versiones y registro de entrenamiento/validación. |
+| OE3 | Se generan predicciones para exactamente los mismos IDs de prueba y se informa soporte por clase. | Métricas, diferencia de macro-F1 y análisis de incertidumbre. |
+| OE4 | Los errores se examinan por clase y fenómeno sin volver a ajustar sobre prueba. | Ficha de errores y límites de generalización. |
+
+El comentario constituye la unidad de observación. Las publicaciones relacionadas forman grupos para dividir los datos y estimar incertidumbre. Repetir semillas no crea ciudadanos ni publicaciones nuevas. La variable dependiente conceptual es el desempeño de clasificación; macro-F1 es su indicador principal. Las métricas secundarias describen sus dimensiones, sin multiplicar hipótesis innecesarias.
+
+### Evidencias y revisión de entrega
+
+[Índice de evidencias](evidencias/README.md) · [Rúbrica de la sesión](../../rubricas/U3_S02_rubrica.md).
+
+La redacción se revisó para mantener correspondencia entre problema, objetivos, indicadores y procedimiento. La aprobación académica corresponde al docente; las actividades aún no ejecutadas permanecen identificadas.
