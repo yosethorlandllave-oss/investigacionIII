@@ -1,75 +1,59 @@
-# Desarrollo — U3 Sesión 1: Identificación del problema y justificación
+# Desarrollo — U3 Sesión 1: Problema y justificación
 
-> **Reformulación del PPI — 26 de noviembre de 2026.** El contenido que sigue corresponde al enfoque anterior de revisión bibliográfica. Se conserva para trazabilidad y no constituye una sesión aprobada o completa para el nuevo proyecto sobre opiniones ciudadanas y limpieza pública en Juliaca. El título, problema, objetivos y diseño deben reformularse después de aclarar los datos de entrada y elegir el título. Las fechas y registros de búsqueda anteriores conservan su carácter histórico.
+**Título:** Comparación de TF-IDF con SVM y BETO para clasificar sentimientos en comentarios ciudadanos sobre limpieza pública y recojo de residuos sólidos en Juliaca
 
+**Autor:** Yoseth Orlando Llave Huachaca.
 
-**Título del enfoque anterior (pendiente de reemplazo):** Análisis de Sentimientos con Modelos de Lenguaje para Sistemas de Recomendación: Una Revisión Sistemática de la Literatura
+**Curso:** Investigación III, Ingeniería de Sistemas, Universidad Peruana Unión.
 
-**Autor:** Yoseth Orlando Llave Huachaca
+**Actualización:** 26 de noviembre de 2026.
 
-**Curso:** Investigación III — Universidad Peruana Unión
+**Estado:** propuesta metodológica redactada; no representa experimentos, recolección o validaciones ejecutados. Las decisiones operativas propuestas requieren revisión del asesor.
 
-**Fecha:** 1 de noviembre de 2026
+## E1. Tema delimitado
 
-**Estado declarado en el avance anterior:** formulación del problema de revisión, para integrar al PPI.
+El proyecto estudiará la clasificación automática de sentimientos en comentarios escritos en español sobre limpieza pública y recojo de residuos sólidos en Juliaca. Comparará un método tradicional, TF-IDF con máquinas de soporte vectorial (SVM), con BETO, un modelo de lenguaje preentrenado en español. TF-IDF asigna pesos a términos según su frecuencia y distribución; SVM aprende una frontera entre clases. BETO representa palabras considerando el contexto.
 
-## E1. Tema de investigación
-
-La revisión estudia cómo los modelos de lenguaje analizan sentimientos en reseñas y cómo esa información se relaciona con sistemas de recomendación. Conserva el alcance amplio del título y toma las RSEÑAS Para generar recomendaciones para el recojo de basura y conciencia ambiental. Los trabajos de otros dominios se usan como antecedentes metodológicos o comparativos y se etiquetan como evidencia contextual, no como evidencia directa. La revisión diferencia clasificación de polaridad, predicción de preferencias, recomendación, explicación y resumen, porque son tareas con resultados distintos.
+La unidad de análisis será el comentario, no el ciudadano. Se estudiarán tres clases: positivo, negativo y neutral. Las opiniones mixtas o indeterminables se registrarán como no clasificables para el experimento principal, sin confundirlas con neutralidad. La investigación no desarrollará recomendaciones de rutas ni medirá una mejora efectiva del servicio municipal.
 
 ## E2. Contexto y situación problemática
 
-Las reseñas en línea contienen expresiones valorativas sobre productos, servicios y contenidos. Los modelos de lenguaje permiten representar aspectos semánticos y contextualizar expresiones; los recomendadores, a su vez, pueden combinar texto con ratings e interacciones para predecir preferencias o explicar resultados. Sin embargo, un buen clasificador sentimental no demuestra por sí solo que las recomendaciones mejoren: para establecerlo se debe medir el resultado downstream del sistema.
+La municipalidad aprobó en 2024 un plan de valorización y erradicación de puntos críticos de residuos (C01). Esto sustenta la pertinencia del ámbito ambiental, pero no cuantifica opiniones o satisfacción. El documento de trabajo proporcionado propone comentarios de Facebook de la municipalidad y de Pachamama Radio, La Decana Radio y Onda Azul Puno. El acceso efectivo, los enlaces exactos de las páginas y el volumen deberán registrarse en el piloto.
 
-El tema se delimita en dos niveles: el fenómeno central es el análisis de sentimientos de reseñas con modelos de lenguaje; la aplicación de interés son los sistemas de recomendación, con énfasis en opiniones  y reseñas de . Como la literatura de integración entre sentimiento y recomendación en reseñas de internet  es más acotada, se incorporan trabajos generales de recomendación y de clasificación como evidencia contextual, identificando explícitamente su dominio y nivel de relación.
+El problema técnico es seleccionar un clasificador adecuado para comentarios locales, posiblemente breves, informales o con valoraciones contradictorias. Los resultados de reseñas comerciales y otros idiomas no establecen el desempeño sobre este corpus. No se conoce todavía si el costo de adaptar BETO se corresponde con una ventaja predictiva frente a SVM.
 
-La literatura localizada también usa distintas unidades y métricas: F1 o accuracy para clasificar polaridad; MSE/RMSE para predicción de ratings; ranking para calidad de recomendación; y medidas automáticas o evaluación humana para explicaciones. Compararlas como si midieran el mismo fenómeno puede llevar a conclusiones erróneas. La situación problemática es que la evidencia está repartida entre clasificación de sentimientos, integración de reseñas en recomendadores y generación de explicaciones. Los estudios usan dominios, etiquetas y métricas diferentes, y hay poca evidencia directa sobre reseñas y opiniones ambeintales , que mida también el efecto en la recomendación. Por ello, no basta con comparar accuracy o F1 de clasificadores: se debe distinguir la evidencia directa de reseñas  de los antecedentes generales y comprobar qué resultado downstream midió cada estudio.
+Se propone estudiar publicaciones relacionadas explícitamente con Juliaca entre noviembre de 2024 y octubre de 2026. Esta ventana procede del documento base y se confirmará antes de la recolección definitiva. La muestra digital no representa a toda la población de Juliaca.
 
-## E3. Evidencia de la existencia del problema
+## E3. Evidencia científica
 
-| Evidencia primaria | Hallazgo útil para delimitar el problema | Límite |
+| Fuente | Evidencia útil | Límite |
 |---|---|---|
-| Pang et al. (2002), reseñas cinematográficas | Compara clasificadores supervisados de polaridad, incluido SVM. | Clasificación de sentimiento no implica integración en recomendación. |
-| Zheng et al. (2017), DeepCoNN | Integra reseñas de usuarios e ítems para predecir ratings. | Usa redes convolucionales; no es un Transformer ni mide polaridad directamente. |
-| Fadhlurrahman et al. (2023), reseñas | Contrasta BERT y BiLSTM-CRF en reseñas de videojuegos de Steam, según la matriz R05 de la sesión 3. | La clasificación no mide una recomendación personalizada posterior. |
-| Etemad Golestani y Moattar (2026), reseñas de videojuegos de Steam | Evalúa un ensamble híbrido con SBERT sobre 147 586 reseñas de 160 videojuegos de Steam, según la matriz R13 de la sesión 3; reporta F1=94,0 %. | Evalúa clasificación y no recomendación downstream; el artículo presenta protocolos experimentales distintos que requieren cautela. |
-| Li et al. (2023), PEPLER; Xie et al. (2023), PRAG | Usan modelos preentrenados, reseñas y generación de explicaciones dentro de recomendación. | Evalúan rating y explicación con métricas distintas de clasificación sentimental. |
-| Ma et al. (2024), XRec | Combina señales colaborativas y LLM para explicar comportamiento usuario–ítem. | Explicabilidad no equivale a precisión de polaridad. |
-| Roumeliotis et al. (2026) | Compara LLM individuales, agregación y ensambles para clasificar sentimiento de reseñas de compra en un contexto de recomendación; reporta desempeño y costos. | La referencia de polaridad se deriva de ratings; no evalúa calidad de ranking recomendador y depende de servicios cerrados. |
+| P04 | Comparación de métodos tradicionales en comentarios peruanos de Facebook. | Restaurantes y polaridad binaria; no es prueba local. |
+| P05 | Evaluación de modelos sobre español coloquial de reseñas. | Dominio cinematográfico y clasificación binaria; véase tabla verificada en S03. |
+| P03 | Disponibilidad de un modelo preentrenado para español. | El preentrenamiento no garantiza éxito en sentimiento municipal. |
+| P06–P07 | Evaluación de modelos clásicos/contextuales y variantes. | Condiciones experimentales y dominios distintos. |
+| P08–P09 | Análisis del lenguaje de redes y de conversaciones ambientales. | Otra plataforma o problemática ambiental. |
 
-La matriz de la sesión 3 consigna datasets, protocolos, métricas y resultados extraídos. También muestra que las conclusiones no son directamente comparables sin atender a las etiquetas y a la tarea evaluada.
+## E4. Brecha de investigación
 
-## E4. Brecha de investigación (research gap)
+Los antecedentes consultados cubren clasificación en español, modelos contextuales y conversación ambiental, pero no aportan una evaluación directamente transferible a comentarios locales sobre ambos servicios de Juliaca bajo particiones comunes. La brecha del proyecto es obtener esa evidencia comparativa contextualizada. No se afirma que no exista ningún estudio equivalente en el mundo o el Perú; la búsqueda deberá ampliarse y actualizarse.
 
-**Brecha preliminar:** la evidencia se distribuye entre clasificación de sentimientos en reseñas, integración del texto en predicción de preferencias y generación de explicaciones/resúmenes. Hace falta una síntesis crítica y trazable que compare cómo se conectan esas etapas, qué señales de opinión usan los modelos de lenguaje y qué evidencia demuestra mejoras en la recomendación, junto con los costos, limitaciones y riesgos de fidelidad.
+## E5. Pregunta de investigación
 
-La brecha no afirma que no existan trabajos; la revisión incluye estudios directamente relacionados y uno de 2026 que evalúa sentimiento y ensambles en recomendación. La pregunta pendiente es cómo organizar y comparar esa evidencia con criterios metodológicos comunes.
-
-## E5. Problema y pregunta de investigación
-
-**Problema:** la evidencia sobre análisis de sentimientos con modelos de lenguaje y su uso en recomendación está fragmentada por tarea, dominio y métrica. Esta fragmentación dificulta determinar qué métodos se han evaluado en reseñas  y hasta qué punto los hallazgos obtenidos en otros dominios permiten orientar sistemas de recomendación de reseñas.
-
-**Pregunta de investigación:** ¿Qué métodos basados en modelos de lenguaje se han aplicado al análisis de sentimientos de reseñas para sistemas de recomendación, qué evidencia existe sobre su integración o utilidad en recomendación  y qué datos, métricas, limitaciones y brechas reporta la literatura?
-
-
+¿Qué diferencias de macro-F1, precisión y recall presentan TF-IDF con SVM y BETO al clasificar sentimientos en comentarios ciudadanos sobre limpieza pública y recojo de residuos sólidos en Juliaca, utilizando los mismos datos etiquetados y particiones de evaluación?
 
 ## E6. Justificación
 
-**Científica.** La revisión organiza la relación entre clasificación sentimental y recomendación, separa evidencia sobre predicción, personalización, explicación y resumen, e identifica las condiciones bajo las cuales los resultados pueden compararse. Esto permite ubicar con precisión qué aporta cada familia de modelos y evita deducir valor recomendador a partir de F1 aislado.
+**Científica.** Permitirá examinar si las diferencias entre representaciones estadísticas y contextuales se sostienen en un dominio local. También documentará casos donde un método sencillo resulte competitivo.
 
-**Metodológica.** El trabajo documenta la estrategia de búsqueda, selección y extracción de datos, registra las diferencias de métrica y formula una síntesis temática. La matriz facilita replicación y actualización; las limitaciones de los borradores se hacen explícitas en vez de convertir referencias incompletas en evidencia verificada.
+**Metodológica.** El etiquetado doble, la separación de publicaciones entre particiones y el análisis de incertidumbre harán explícitas las condiciones de comparación. Los resultados deberán interpretarse junto con su soporte y variabilidad.
 
-**Práctica y tecnológica.** La síntesis puede orientar a equipos que desarrollan recomendadores basados en reseñas a elegir datos, señales, métricas y procedimientos de explicación apropiados. La revisión también organiza aspectos de costo y eficiencia cuando los estudios los reportan. Sus resultados no garantizan un aumento de satisfacción o calidad comercial; esa conclusión requeriría evaluación con usuarios y sistemas desplegados.
+**Tecnológica.** Se obtendrán pipelines reproducibles y una evaluación para elegir un componente de análisis textual. No se presupone que una arquitectura compleja sea preferible.
 
-## E7. Referencias científicas utilizadas
+**Práctica.** La clasificación podría facilitar la organización de comentarios para su revisión humana. Su utilidad en decisiones municipales requeriría una evaluación posterior, distinta del desempeño lingüístico.
 
-La lista completa y trazable de 13 trabajos se presenta. Entre las fuentes centrales se encuentran Pang et al. (2002), Zheng et al. (2017), Fadhlurrahman et al. (2023), Li et al. (2023), Xie et al. (2023), Ma et al. (2024), Wu et al. (2024), Roumeliotis et al. (2026) y Etemad Golestani y Moattar (2026). Solo se incorporan a la matriz referencias con metadatos identificables y fuente de consulta registrada.
+## E7. Referencias y evidencias
 
-## Control del avance anterior (pendiente de reevaluación para el PPI)
+Referencias P03–P09 y C01: [bibliografía](../../literatura/referencias_ppi.md). La matriz de evidencia del problema se conserva en [evidencias](evidencias/delimitacion.md).
 
-- [x] Tema y contexto delimitados al título original, con videojuegos como énfasis y distinción de evidencia contextual.
-- [x] Situación problemática formulada en términos de la síntesis de evidencia.
-- [x] Evidencia primaria localizada y límites explicitados.
-- [x] Brecha y pregunta de revisión formuladas sin declarar ausencia universal de trabajos.
-- [x] Justificaciones científica, metodológica y práctica.
-- [x] Referencias trazables a la sesión 3.
+**Pendiente de campo:** confirmar acceso y disponibilidad del corpus. El problema no incluye cifras de reclamos ni deterioro del servicio no comprobadas.
