@@ -8,7 +8,7 @@
 
 **Actualización:** 26 de noviembre de 2026.
 
-**Estado:** propuesta metodológica redactada; no representa experimentos, recolección o validaciones ejecutados. Las decisiones operativas propuestas requieren revisión del asesor.
+**Estado:** propuesta metodológica redactada; no representa experimentos, recolección o validaciones ejecutados. El alcance de esta entrega es documental y prospectivo; la ejecución se realizará en una etapa futura.
 
 ## E1. Pregunta revisada
 
@@ -42,11 +42,11 @@ La variable independiente será el enfoque de clasificación. La dependiente pri
 | Variable | Definición conceptual y operacional | Dimensión / indicador | Escala | Instrumento |
 |---|---|---|---|---|
 | Independiente: enfoque de clasificación | Procedimiento que transforma texto en una clase. Dos niveles: pipeline TF-IDF–LinearSVC y BETO ajustado. | Identificador y configuración del modelo. | Nominal | Ficha experimental. |
-| Dependiente principal: desempeño | Concordancia entre predicciones y etiquetas humanas adjudicadas. | Macro-F1: promedio no ponderado del F1 de positivo, negativo y neutral. | Numérica 0–1 | Predicciones y script de métricas. |
+| Dependiente principal: desempeño | Concordancia entre predicciones y etiquetas humanas revisadas. | Macro-F1: promedio no ponderado del F1 de positivo, negativo y neutral. | Numérica 0–1 | Predicciones y script de métricas. |
 | Dependientes secundarias | Desempeño diferenciado por categoría. | Precision, recall y F1 por clase; exactitud y matriz de confusión. | 0–1 y recuentos | Informe de evaluación. |
 | Control: datos | Mismos comentarios y etiquetas para ambos enfoques. | Hash de corpus, IDs y partición; tres clases fijas. | Nominal / recuentos | Manifiesto del corpus. |
 | Control: selección de configuración | Ajuste sin acceso a prueba. | Rejilla, criterio de validación y presupuesto documentados. | Registro | Ficha experimental. |
-| Calidad de anotación | Acuerdo independiente antes de adjudicar. | Kappa de Cohen, acuerdo porcentual y soporte por clase. | Kappa −1 a 1; proporciones | Fichas de dos anotadores. |
+| Calidad de anotación | Consistencia intraevaluador entre dos revisiones separadas. | Porcentaje de coincidencia entre dos revisiones del investigador y soporte por clase. | Proporciones de 0 a 1 | Ficha de revisión individual. |
 | Descriptiva: recursos | Condiciones de ejecución, no parte del título ni de la hipótesis principal. | Hardware, versiones, duración y semillas. | Texto / segundos | Bitácora. |
 
 Un corpus es un conjunto organizado de textos. Un pipeline encadena preparación y clasificación; la fuga de información ocurre cuando el ajuste utiliza datos reservados para evaluar. En cada clase, TP son aciertos positivos, FP falsas asignaciones y FN casos de la clase que el modelo omitió. Precisión mide cuántas asignaciones fueron correctas; recall, qué proporción de casos de la clase fue recuperada. F1 combina ambas medidas.
@@ -58,7 +58,7 @@ Para cada clase, precisión = TP/(TP+FP), recall = TP/(TP+FN) y F1 = 2TP/(2TP+FP
 | Problema | Objetivo | Hipótesis | Variable / indicador | Procedimiento y evidencia |
 |---|---|---|---|---|
 | Desempeño local no establecido en los antecedentes consultados. | Objetivo general: comparar SVM y BETO. | H0: Δ=0; H1: Δ≠0. Expectativa: Δ>0. | Enfoque; macro-F1. | Prueba común reservada y comparación pareada. |
-| No existe aún un corpus local documentado en este repositorio. | OE1: construir corpus. | No requiere hipótesis independiente. | Acuerdo, soporte, elegibilidad. | Selección, anotación doble y adjudicación. |
+| No existe aún un corpus local documentado en este repositorio. | OE1: construir corpus. | No requiere hipótesis independiente. | Acuerdo, soporte, elegibilidad. | Selección, anotación individual y revisión diferida. |
 | Comparaciones pueden confundir datos y arquitectura. | OE2: entrenar bajo protocolo común. | Se integra al contraste general. | Configuración y partición. | Ajuste solo en entrenamiento/validación. |
 | Diferencias puntuales pueden ser inestables. | OE3: evaluar e inferir. | Contraste principal general. | Δ y variabilidad. | Remuestreo agrupado y contraste descrito en S04. |
 | Promedios ocultan fallos del lenguaje local. | OE4: analizar errores. | Descriptivo, sin nuevas hipótesis confirmatorias. | Errores por clase y fenómeno. | Revisión ciega de casos anonimizados. |
@@ -71,7 +71,7 @@ P01–P03 fundamentan los enfoques; P04–P08 contextualizan la comparación y M
 
 | Objetivo | Criterio de cierre | Evidencia que debe existir |
 |---|---|---|
-| OE1 | Cada caso incluido tiene origen, pertinencia, dos etiquetas y decisión final; no quedan identificadores personales en la entrada. | Corpus restringido, guía versionada y reporte agregado de acuerdo. |
+| OE1 | Cada caso incluido tiene origen, pertinencia, etiqueta inicial y etiqueta revisada y decisión final; no quedan identificadores personales en la entrada. | Corpus restringido, guía versionada y reporte agregado de acuerdo. |
 | OE2 | Ambos modelos usan el mismo manifiesto; el vocabulario y ajuste no utilizan prueba. | Configuración, versiones y registro de entrenamiento/validación. |
 | OE3 | Se generan predicciones para exactamente los mismos IDs de prueba y se informa soporte por clase. | Métricas, diferencia de macro-F1 y análisis de incertidumbre. |
 | OE4 | Los errores se examinan por clase y fenómeno sin volver a ajustar sobre prueba. | Ficha de errores y límites de generalización. |

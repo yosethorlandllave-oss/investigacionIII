@@ -8,7 +8,7 @@
 
 **Actualización:** 26 de noviembre de 2026.
 
-**Estado:** propuesta metodológica redactada; no representa experimentos, recolección o validaciones ejecutados. Las decisiones operativas propuestas requieren revisión del asesor.
+**Estado:** propuesta metodológica redactada; no representa experimentos, recolección o validaciones ejecutados. El alcance de esta entrega es documental y prospectivo; la ejecución se realizará en una etapa futura.
 
 ## E1. Estrategia de búsqueda
 
@@ -60,7 +60,7 @@ P09 estudia conversaciones ambientales en redes. Su tarea y dominio difieren del
 
 P12 muestra que adaptar el preentrenamiento al lenguaje social puede superar a un modelo general en español. Esta evidencia obliga a justificar BETO como candidato concreto y a reconocer modelos alternativos, sin cambiar el título aprobado. P14 refuerza que la disponibilidad de etiquetas modifica la comparación. Por ello, 600 comentarios son una meta logística preliminar y no una garantía de rendimiento.
 
-P13 advierte que el desacuerdo entre anotadores contiene información. En este proyecto se conservarán ambas etiquetas y las razones de adjudicación; los casos mixtos no se convertirán artificialmente en neutrales. P09 y P15 muestran tendencias ambientales de distinto signo en dominios diferentes: no es una contradicción experimental, sino un motivo para medir el caso local.
+P13 advierte que el desacuerdo entre anotadores contiene información. En este proyecto se conservarán la etiqueta inicial y su revisión y las razones de revisión de etiquetas; los casos mixtos no se convertirán artificialmente en neutrales. P09 y P15 muestran tendencias ambientales de distinto signo en dominios diferentes: no es una contradicción experimental, sino un motivo para medir el caso local.
 
 ### Síntesis crítica y propuesta
 

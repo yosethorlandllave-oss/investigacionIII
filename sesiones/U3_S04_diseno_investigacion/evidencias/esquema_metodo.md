@@ -4,7 +4,7 @@
 flowchart TD
  A[Acceso, fuentes y protocolo] --> B[Piloto y revisión de instrumentos]
  B --> C[Recolección y anonimización]
- C --> D[Dos anotaciones independientes y adjudicación]
+ C --> D[Anotación individual y revisión diferida]
  D --> E[Agrupar publicaciones y duplicados]
  E --> F[Entrenamiento 60 por ciento]
  E --> G[Validación 20 por ciento]

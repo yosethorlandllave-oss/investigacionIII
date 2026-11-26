@@ -13,13 +13,13 @@ Todos los CSV usarán UTF-8. Una fila corresponde a una observación. Los archiv
 | tema | recojo, limpieza, acumulacion, general; separador ; | Sí | Pertinencia. |
 | pertinente | si/no | Sí | Selección. |
 | motivo_exclusion | Código o vacío si incluido | Condicional | Trazabilidad. |
-| etiqueta_a / etiqueta_b | positivo/negativo/neutral/no_clasificable | Antes de adjudicar | Acuerdo independiente. |
-| etiqueta_final | Mismos valores | Sí en corpus final | Referencia adjudicada. |
+| etiqueta_inicial / etiqueta_revision | positivo/negativo/neutral/no_clasificable | Antes de revisar | Coincidencia entre revisiones. |
+| etiqueta_final | Mismos valores | Sí en corpus final | Referencia revisada. |
 | motivo_adjudicacion | Texto sin datos personales | Si desacuerdo | Trazabilidad. |
 | version_guia | Cadena | Sí | Reproducibilidad. |
 | particion | piloto/train/validation/test/excluido | Al congelar | Control experimental. |
 
-Separar registro restringido de URLs de publicaciones y condiciones de acceso del corpus anonimizado. No almacenar identificadores de usuarios. El texto puede seguir siendo localizable por buscadores; anonimización no justifica publicarlo automáticamente. Mantener datos reales fuera del repositorio y copias cifradas con acceso limitado. Definir responsable, retención y eliminación con asesor antes de recolectar. Git solo contendrá esquemas, código y métricas agregadas sin celdas que permitan identificar personas.
+Separar registro restringido de URLs de publicaciones y condiciones de acceso del corpus anonimizado. No almacenar identificadores de usuarios. El texto puede seguir siendo localizable por buscadores; anonimización no justifica publicarlo automáticamente. Mantener datos reales fuera del repositorio y copias cifradas con acceso limitado. Definir responsable, retención y eliminación durante la planificación antes de recolectar. Git solo contendrá esquemas, código y métricas agregadas sin celdas que permitan identificar personas.
 
 Predicciones: comentario_id, grupo_id, etiqueta_real, etiqueta_predicha, modelo, semilla, particion. Manifestar hashes, conteos y versión sin publicar textos. No agregar timestamps como datos ficticios a los formularios pendientes.
 
@@ -60,6 +60,6 @@ Predicciones: comentario_id, grupo_id, etiqueta_real, etiqueta_predicha, modelo,
 
 ## Integridad y faltantes
 
-Los CSV de recolección, adjudicación y particiones se relacionan mediante comentario_id; la publicación mediante publicacion_id. Una observación no puede pertenecer a dos grupos. Cada comentario tiene una fila por anotador y una etiqueta final. Una predicción es única por comentario/modelo/semilla. El manifiesto define n_comentarios como los casos de las tres clases incluidos en train/validation/test; los no clasificables se cuentan por separado.
+Los CSV de recolección, revisión de etiquetas y particiones se relacionan mediante comentario_id; la publicación mediante publicacion_id. Una observación no puede pertenecer a dos grupos. Cada comentario tiene una fila por revisión y una etiqueta final. Una predicción es única por comentario/modelo/semilla. El manifiesto define n_comentarios como los casos de las tres clases incluidos en train/validation/test; los no clasificables se cuentan por separado.
 
 Un dato desconocido permanece vacío o como pendiente solo durante planificación. Antes de congelar corpus, no se admiten IDs, textos, grupos, etiquetas ni particiones ausentes. No imputar sentimiento ni fechas con valores inventados. El diccionario admite piloto como fase de captura, pero el manifiesto final usa únicamente train/validation/test/excluido y conserva origen_piloto.

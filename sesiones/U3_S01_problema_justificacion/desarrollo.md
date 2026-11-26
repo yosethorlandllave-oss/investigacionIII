@@ -8,7 +8,7 @@
 
 **Actualización:** 26 de noviembre de 2026.
 
-**Estado:** propuesta metodológica redactada; no representa experimentos, recolección o validaciones ejecutados. Las decisiones operativas propuestas requieren revisión del asesor.
+**Estado:** propuesta metodológica redactada; no representa experimentos, recolección o validaciones ejecutados. El alcance de esta entrega es documental y prospectivo; la ejecución se realizará en una etapa futura.
 
 ## E1. Tema delimitado
 
