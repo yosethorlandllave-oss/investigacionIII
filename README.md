@@ -24,6 +24,8 @@ Este repositorio permite desarrollar, versionar y documentar el Perfil de Proyec
 
 ## Datos del proyecto
 
+Avance vigente: [sesiones redactadas y documentos de apoyo](entregables/LEEME_sesiones.md). La comparación SVM–BETO se desarrolla como Perfil de Proyecto de Investigación. El [control de rúbricas](feedback/2026-11-26_control_rubricas_redaccion.md) distingue redacción, verificación bibliográfica y actividades de campo pendientes.
+
 Los estudiantes deben editar el archivo:
 
 `proyecto.yaml`

@@ -12,3 +12,7 @@ venv/
 
 # Salidas generadas automáticamente
 entregables/*.pdf
+
+# Datos reales restringidos; no publicar comentarios ni identificadores
+datos_restringidos/
+experimentos/datos_reales/

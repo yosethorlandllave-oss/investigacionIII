@@ -1,0 +1,70 @@
+# Técnicas e instrumentos de recolección
+
+## E1. Matriz indicador–técnica–instrumento–fuente
+
+| Indicador | Técnica | Instrumento | Fuente / frecuencia |
+|---|---|---|---|
+| Elegibilidad, cobertura y exclusiones | Observación documental | registro_publicaciones.csv y registro_recoleccion.csv | Publicaciones propuestas; cada lote. |
+| Etiquetas, acuerdo porcentual y kappa | Anotación independiente y adjudicación | guia_anotacion.md, anotacion_independiente.csv y adjudicacion.csv | Dos anotadores; piloto y corpus. |
+| Macro-F1, precisión, recall, F1 por clase, exactitud y confusión | Evaluación computacional | predicciones.csv y script de métricas por implementar | Etiquetas y predicciones de prueba; cada ejecución predefinida. |
+| Modelo y configuración seleccionada | Registro del experimento | ficha_experimento.csv | Cada configuración, validación y ejecución. |
+| Hash, soporte, grupos y particiones comunes | Control del corpus | manifiesto_corpus.csv y particiones.csv | Cada versión congelada. |
+| Hardware, versiones, semillas y duración | Bitácora técnica | ficha_experimento.csv | Computadora/Colab; cada ejecución. |
+| Frecuencia de errores por fenómeno | Revisión cualitativa descriptiva | analisis_errores.csv | Errores de prueba, después de congelar resultados. |
+| Reglas y afectados por limpieza | Auditoría de transformación | control_limpieza.csv | Cada lote y regla. |
+| Acceso, custodia y condiciones | Revisión documental | condiciones_acceso.csv | Cada fuente antes de recopilar o transferir. |
+
+La técnica es el procedimiento de obtención o medición; el instrumento organiza sus reglas y campos; Python o una hoja de cálculo son herramientas para aplicarlo.
+
+## E2. Instrumentos elaborados
+
+En `instrumentos/` se encuentran la guía de anotación, registro de publicaciones, registro de recolección, ficha de anotación independiente, adjudicación, diccionario, ficha experimental, esquema de predicciones y ficha de validación, manifiesto, particiones, control de limpieza, análisis de errores y condiciones de acceso. Todos tienen una finalidad y campos definidos. Los CSV contienen únicamente encabezados; no son evidencia de comentarios obtenidos.
+
+## E3. Validación
+
+Se propone revisar claridad y pertinencia de la guía con el asesor y, si se dispone, un especialista del servicio. Los participantes no están confirmados. Dos anotadores aplicarán la guía de forma independiente y se calculará acuerdo previo al consenso. El análisis de kappa se acompañará de frecuencias y desacuerdos porque depende de la prevalencia de clases.
+
+Los instrumentos técnicos se validarán con comprobaciones de tipos, IDs, particiones disjuntas, ausencia de duplicados entre conjuntos y métricas sobre casos sintéticos. No corresponde alfa de Cronbach a fichas de captura o logs. Estado actual: instrumentos redactados; juicio de revisión, confiabilidad empírica y pruebas del software experimental pendientes. Véase `instrumentos/ficha_validacion.md`.
+
+## E4. Piloto y ajustes
+
+El [protocolo e informe pendiente](../sesiones/U3_S05_recoleccion_datos/evidencias/piloto.md) define 30 publicaciones y hasta 100 comentarios, anotación doble y evaluación del tiempo, cobertura y acuerdo. No hay resultados reales disponibles en el repositorio. La versión posterior deberá registrar fecha, participantes, problemas observados y ajustes efectivos; no completar esos campos con resultados esperados.
+
+## E5. Protocolo y calendario
+
+Semana 1: confirmar acceso y condiciones, registrar páginas exactas y publicaciones. Semana 2: ejecutar piloto y revisar guía. Semanas 3–4: recolección y anotación definitivas. Las semanas son relativas al inicio aprobado y siguen S04; fechas exactas pendientes. Entorno confirmado por el estudiante: computadora para el piloto y Google Colab para BETO; comprobar GPU y condiciones de tratamiento antes de cargar datos.
+
+Por cada lote: registrar fuente y orden de revisión; aplicar pertinencia; asignar ID; anonimizar; anotar por separado; calcular acuerdo; adjudicar; validar diccionario; versionar corpus y manifiesto. Documentar cada exclusión y cambio. El investigador custodia el registro; el segundo anotador y revisor se designarán antes del piloto.
+
+## E6. Diccionario y almacenamiento
+
+El [diccionario](../instrumentos/diccionario_datos.md) define campos, valores permitidos y relación con variables. Guardar CSV UTF-8 restringido fuera de Git. Separar enlaces de publicaciones del texto anonimizado. Registrar hashes y conteos por versión; la misma versión debe alimentar ambos modelos. Los formularios públicos serán copias vacías.
+
+## E7. Limpieza y calidad
+
+| Problema | Detección | Tratamiento |
+|---|---|---|
+| Texto vacío | Nulo, solo espacios o sin contenido textual interpretable | Excluir con motivo. |
+| Fechas o localidad inciertas | Registro no verificable | No presumir elegibilidad; revisar o excluir. |
+| Duplicados exactos | Normalización Unicode/espacios y hash restringido | Conservar una instancia y trazabilidad del conteo. |
+| Duplicados cercanos o republicaciones | Comparación textual y revisión manual previa a partición | Agrupar publicaciones relacionadas; documentar decisión. |
+| Datos personales | Revisión del texto y patrones de teléfonos/correos | Enmascarar antes de distribuir o entrenar. |
+| Etiquetas incompatibles | Validar conjunto de valores y desacuerdos | Adjudicar con guía; nunca completar automáticamente con predicción. |
+| Longitudes extremas | Medir distribución en entrenamiento | Registrar truncamiento BETO; no excluir por desacuerdo con el modelo. |
+| Desbalance | Conteos por clase/fuente | Informar; ponderación solo en entrenamiento y ajuste por validación. |
+
+Preservar negación y emojis relevantes. Registrar regla, versión y número de afectados en cada transformación. No adaptar limpieza a errores de prueba después de observar el resultado final.
+
+## E8. Ética, privacidad y acceso
+
+El origen público se documentará, pero no se considerará permiso automático para extraer o redistribuir. El asesor revisará condiciones de plataforma y requisitos institucionales antes de recolectar; cualquier autorización necesaria debe quedar registrada. No habrá acceso a grupos privados, perfiles ni evasión de controles. La fuente se suspenderá si no se cuenta con una vía admisible.
+
+No publicar nombres, imágenes, identificadores, URLs a comentarios individuales ni textos que permitan identificar usuarios. El acceso al corpus se limitará a personas designadas; la retención y eliminación se establecerán antes de captura. Tampoco se publicarán muestras textuales reales como ejemplos sin revisión específica. La caracterización de usuarios no es un objetivo del proyecto.
+
+## E9. Redacción de la sección y referencias
+
+La recolección se realizará mediante observación documental de publicaciones públicas pertinentes y un registro estructurado. Los comentarios pasarán por anonimización, revisión temática y anotación independiente. La referencia final procederá de adjudicación humana y se conservará junto con la versión de las reglas. La validación de instrumentos combinará revisión de contenido, acuerdo entre evaluadores y comprobaciones técnicas. Antes de la recolección definitiva se ejecutará un piloto que permita ajustar cobertura, ventana, tiempos y procedimientos. El protocolo mantendrá separados los datos restringidos y los artefactos públicos de reproducibilidad.
+
+P04–P05 y P08–P09 aportan antecedentes de comentarios digitales; M01 orienta el reporte de evaluación. Véase [bibliografía](../literatura/referencias_ppi.md). Esta sección se guarda también en `ppi/06_tecnicas_instrumentos.md`.
+
+**Estado de rúbrica:** E1, E2, E5, E6, E7 y E9 redactados como propuesta. E3 y E4 requieren ejecución real; E8 requiere comprobar condiciones y responsabilidades antes de acceso. No se declara puntaje ni aprobación docente.
