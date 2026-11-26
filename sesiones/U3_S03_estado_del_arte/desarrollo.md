@@ -1,6 +1,9 @@
 # Desarrollo — U3 Sesión 3: Estado del arte
 
-**Título de la investigación:** Análisis de Sentimientos con Modelos de Lenguaje para Sistemas de Recomendación: Una Revisión Sistemática de la Literatura
+> **Reformulación del PPI — 26 de noviembre de 2026.** El contenido que sigue corresponde al enfoque anterior de revisión bibliográfica. Se conserva para trazabilidad y no constituye una sesión aprobada o completa para el nuevo proyecto sobre opiniones ciudadanas y limpieza pública en Juliaca. El título, problema, objetivos y diseño deben reformularse después de aclarar los datos de entrada y elegir el título. Las fechas y registros de búsqueda anteriores conservan su carácter histórico.
+
+
+**Título del enfoque anterior (pendiente de reemplazo):** Análisis de Sentimientos con Modelos de Lenguaje para Sistemas de Recomendación: Una Revisión Sistemática de la Literatura
 
 **Autor:** Yoseth Orlando Llave Huachaca
 
@@ -8,7 +11,7 @@
 
 **Fecha de corte:** 1 de noviembre de 2026
 
-**Estado:** protocolo y síntesis bibliográfica documentados; borrador para integrar al Perfil de Proyecto de Investigación.
+**Estado declarado en el avance anterior:** protocolo y síntesis bibliográfica documentados; borrador para integrar al Perfil de Proyecto de Investigación.
 
 ## Alcance del producto
 
@@ -104,7 +107,7 @@ Esta revisión analiza estudios sobre modelos de lenguaje y análisis de sentimi
 
 La línea de clasificación va desde la comparación supervisada de Pang et al. hasta ensambles neuronales y Transformers. Los estudios contemporáneos abarcan Yelp, Steam y reseñas asociadas a ratings. Aunque sus puntuaciones de F1 o accuracy ilustran el desempeño en cada caso, difieren en idioma, balance, fuente de etiquetas, configuración y partición. En particular, la derivación de positivo/negativo a partir de ratings no equivale a la anotación directa de cada expresión. Los resultados sirven como evidencia de clasificación contextualizada; por sí solos no prueban impacto en recomendación.
 
-La evidencia directa de reseñas identificada en el corpus es Fadhlurrahman et al. (2023), que compara BERT y variantes recurrentes en reseñas de restaurantes . El estudio evalúa clasificación sentimental; no mide cómo las predicciones cambian el ranking o la utilidad de una recomendación. Los trabajos en otros dominios ayudan a comprender métodos y métricas, pero la transferencia a jerga, ironía y comunidades de videojuegos requiere validación específica.
+La evidencia directa de reseñas identificada en el corpus es Fadhlurrahman et al. (2023), que compara BERT y variantes recurrentes en reseñas de videojuegos de Steam, según la matriz R05. El estudio evalúa clasificación sentimental; no mide cómo las predicciones cambian el ranking o la utilidad de una recomendación. Los trabajos en otros dominios ayudan a comprender métodos y métricas, pero la transferencia a jerga, ironía y comunidades de videojuegos requiere validación específica.
 
 ### Integración del texto en recomendadores
 

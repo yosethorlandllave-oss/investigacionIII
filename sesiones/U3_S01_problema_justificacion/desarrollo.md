@@ -1,6 +1,9 @@
 # Desarrollo — U3 Sesión 1: Identificación del problema y justificación
 
-**Título de la investigación:** Análisis de Sentimientos con Modelos de Lenguaje para Sistemas de Recomendación: Una Revisión Sistemática de la Literatura
+> **Reformulación del PPI — 26 de noviembre de 2026.** El contenido que sigue corresponde al enfoque anterior de revisión bibliográfica. Se conserva para trazabilidad y no constituye una sesión aprobada o completa para el nuevo proyecto sobre opiniones ciudadanas y limpieza pública en Juliaca. El título, problema, objetivos y diseño deben reformularse después de aclarar los datos de entrada y elegir el título. Las fechas y registros de búsqueda anteriores conservan su carácter histórico.
+
+
+**Título del enfoque anterior (pendiente de reemplazo):** Análisis de Sentimientos con Modelos de Lenguaje para Sistemas de Recomendación: Una Revisión Sistemática de la Literatura
 
 **Autor:** Yoseth Orlando Llave Huachaca
 
@@ -8,7 +11,7 @@
 
 **Fecha:** 1 de noviembre de 2026
 
-**Estado:** formulación del problema de revisión, para integrar al PPI.
+**Estado declarado en el avance anterior:** formulación del problema de revisión, para integrar al PPI.
 
 ## E1. Tema de investigación
 
@@ -28,8 +31,8 @@ La literatura localizada también usa distintas unidades y métricas: F1 o accur
 |---|---|---|
 | Pang et al. (2002), reseñas cinematográficas | Compara clasificadores supervisados de polaridad, incluido SVM. | Clasificación de sentimiento no implica integración en recomendación. |
 | Zheng et al. (2017), DeepCoNN | Integra reseñas de usuarios e ítems para predecir ratings. | Usa redes convolucionales; no es un Transformer ni mide polaridad directamente. |
-| Fadhlurrahman et al. (2023), reseñas | Contrasta BERT y BiLSTM-CRF en reseñas de restaurantes . | La clasificación no mide una recomendación personalizada posterior. |
-| Etemad Golestani y Moattar (2026), reseñas de internetj | Evalúa un ensamble híbrido con SBERT sobre 147 586 reseñas de 160 restaurantes; reporta F1=94,0 %. | Evalúa clasificación y no recomendación downstream; el artículo presenta protocolos experimentales distintos que requieren cautela. |
+| Fadhlurrahman et al. (2023), reseñas | Contrasta BERT y BiLSTM-CRF en reseñas de videojuegos de Steam, según la matriz R05 de la sesión 3. | La clasificación no mide una recomendación personalizada posterior. |
+| Etemad Golestani y Moattar (2026), reseñas de videojuegos de Steam | Evalúa un ensamble híbrido con SBERT sobre 147 586 reseñas de 160 videojuegos de Steam, según la matriz R13 de la sesión 3; reporta F1=94,0 %. | Evalúa clasificación y no recomendación downstream; el artículo presenta protocolos experimentales distintos que requieren cautela. |
 | Li et al. (2023), PEPLER; Xie et al. (2023), PRAG | Usan modelos preentrenados, reseñas y generación de explicaciones dentro de recomendación. | Evalúan rating y explicación con métricas distintas de clasificación sentimental. |
 | Ma et al. (2024), XRec | Combina señales colaborativas y LLM para explicar comportamiento usuario–ítem. | Explicabilidad no equivale a precisión de polaridad. |
 | Roumeliotis et al. (2026) | Compara LLM individuales, agregación y ensambles para clasificar sentimiento de reseñas de compra en un contexto de recomendación; reporta desempeño y costos. | La referencia de polaridad se deriva de ratings; no evalúa calidad de ranking recomendador y depende de servicios cerrados. |
@@ -62,7 +65,7 @@ La brecha no afirma que no existan trabajos; la revisión incluye estudios direc
 
 La lista completa y trazable de 13 trabajos se presenta. Entre las fuentes centrales se encuentran Pang et al. (2002), Zheng et al. (2017), Fadhlurrahman et al. (2023), Li et al. (2023), Xie et al. (2023), Ma et al. (2024), Wu et al. (2024), Roumeliotis et al. (2026) y Etemad Golestani y Moattar (2026). Solo se incorporan a la matriz referencias con metadatos identificables y fuente de consulta registrada.
 
-## Control de avance
+## Control del avance anterior (pendiente de reevaluación para el PPI)
 
 - [x] Tema y contexto delimitados al título original, con videojuegos como énfasis y distinción de evidencia contextual.
 - [x] Situación problemática formulada en términos de la síntesis de evidencia.

@@ -1,6 +1,9 @@
 # Desarrollo — U3 Sesión 2: Objetivos, hipótesis y variables
 
-**Título de la investigación:** Análisis de Sentimientos con Modelos de Lenguaje para Sistemas de Recomendación: Una Revisión Sistemática de la Literatura
+> **Reformulación del PPI — 26 de noviembre de 2026.** El contenido que sigue corresponde al enfoque anterior de revisión bibliográfica. Se conserva para trazabilidad y no constituye una sesión aprobada o completa para el nuevo proyecto sobre opiniones ciudadanas y limpieza pública en Juliaca. El título, problema, objetivos y diseño deben reformularse después de aclarar los datos de entrada y elegir el título. Las fechas y registros de búsqueda anteriores conservan su carácter histórico.
+
+
+**Título del enfoque anterior (pendiente de reemplazo):** Análisis de Sentimientos con Modelos de Lenguaje para Sistemas de Recomendación: Una Revisión Sistemática de la Literatura
 
 **Autor:** Yoseth Orlando Llave Huachaca
 
@@ -8,7 +11,7 @@
 
 **Fecha:** 1 de noviembre de 2026
 
-**Estado:** objetivos y matriz de consistencia para el diseño documental de la revisión; no hay experimento propio.
+**Estado declarado en el avance anterior:** objetivos y matriz de consistencia para el diseño documental de la revisión; no hay experimento propio.
 
 ## E1. Pregunta de investigación revisada
 
@@ -74,7 +77,7 @@ La consigna solicita determinar si el enfoque y alcance requieren hipótesis. Es
 
 Pang et al. (2002) aporta clasificación de polaridad; Zheng et al. (2017) integra reseñas en recomendación; Zhang et al. (2023) organiza análisis por aspecto; Wu et al. (2024) organiza modelos de lenguaje en recomendación; Roumeliotis et al. (2026) mide sentimiento, agregación y costo en ese contexto. Los metadatos y enlaces completos están en E9 de la sesión 3 y en la matriz de síntesis. Esta operacionalización es una propuesta de la revisión, no una definición atribuida literalmente a esos artículos.
 
-## Correspondencia con la actividad
+## Correspondencia anterior con la actividad (pendiente de reevaluación para el PPI)
 
 - [x] Pregunta específica, revisable y delimitada al título con énfasis en videojuegos.
 - [x] Objetivo general y cuatro objetivos específicos.
