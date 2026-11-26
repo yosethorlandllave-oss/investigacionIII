@@ -1,4 +1,6 @@
 proyecto:
+  tipo: "Perfil de Proyecto de Investigación"
+  estado: "Reformulación del tema y alcance"
   titulo: "Análisis de Sentimientos con Modelos de Lenguaje para Sistemas de Recomendación: Una Revisión Sistemática de la Literatura"
 
 integrantes:
@@ -12,3 +14,4 @@ curso:
 
 docente:
   nombre: "M.Sc. Fredy Abel Huanca Torres"
+
